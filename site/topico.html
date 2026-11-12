@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tópico | Programas Ambientais do CT</title>
+  <link rel="icon" type="image/png" href="images/arvore.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Saira+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <meta name="theme-color" content="#f58220">
+  <style>
+    .cycle-slider{background:var(--color-white);border-radius:var(--radius-md);box-shadow:var(--shadow-md);border:1px solid var(--color-border);padding:2.5rem;margin-block:0;position:relative}
+    .cycle-progress{height:4px;width:100%;background:var(--color-border);border-radius:2px;margin-bottom:2rem;overflow:hidden}
+    .cycle-progress-bar{height:100%;background:var(--color-orange);width:0%;transition:width .35s cubic-bezier(.4,0,.2,1)}
+    .cycle-display{display:flex;flex-direction:column;align-items:center;gap:1.5rem;text-align:center;margin-bottom:2.5rem;min-height:200px}
+    @media(min-width:768px){.cycle-display{flex-direction:row;text-align:left;gap:3rem}}
+    .cycle-emoji{font-size:5rem;line-height:1;transition:transform .35s,opacity .35s}
+    .cycle-dots{display:flex;justify-content:center;gap:.5rem;margin-bottom:1.5rem}
+    .cycle-dot{width:12px;height:12px;border-radius:50%;background:var(--color-border);border:none;padding:0;cursor:pointer;transition:background .2s}
+    .cycle-dot.is-active{background:var(--color-orange)}
+    .cycle-controls{display:flex;justify-content:space-between;align-items:center}
+  </style>
+</head>
+<body class="page-programa"><div role="note" style="padding:.65rem 1rem;text-align:center;background:#fff3cd;color:#664d03;font:500 .9rem Arial,sans-serif">Pr&eacute;via est&aacute;tica de teste &mdash; n&atilde;o possui painel de edi&ccedil;&atilde;o.</div>
+  <header class="site-header site-header--light is-scrolled">
+    <div class="container header__inner">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Programas Ambientais do CT" class="logo-img" width="200" height="48">
+      </a>
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="noticias.html" class="nav-link">Notícias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="topic-page">
+    <div class="container" id="topic-page">
+      <p>Carregando conteúdo…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__bottom-inner">
+      <p>&copy; <span id="footer-year"></span> Programas Ambientais do CT — UFRJ</p>
+    </div>
+  </footer>
+
+  <script src="js/topics-content.js" defer></script>
+  <script src="js/topic-interactives.js" defer></script>
+  
+  <script src="js/topic-page.js" defer></script>
+  <script src="script.js" defer></script>
+  
+</body>
+</html>

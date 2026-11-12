@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="images/arvore.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO: título e descrição -->
+  <title>Programas Ambientais do CT | Sustentabilidade e Economia Circular na UFRJ</title>
+  <meta name="description" content="Projeto de extensão da UFRJ focado em reciclagem, sustentabilidade e economia circular dentro do Centro de Tecnologia.">
+  <meta name="keywords" content="Programas Ambientais do CT, UFRJ, Centro de Tecnologia, reciclagem, sustentabilidade, economia circular, educação ambiental, extensão universitária, Rio de Janeiro">
+  <meta name="author" content="Programas Ambientais do CT — Projeto de Extensão UFRJ">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://vitinnho13.github.io/programas-ambientais-ct-teste/">
+  <meta property="og:site_name" content="programasambientaisct">
+  <meta property="og:title" content="Programas Ambientais do CT | Sustentabilidade e Economia Circular na UFRJ">
+  <meta property="og:description" content="Projeto de extensão da UFRJ focado em reciclagem, sustentabilidade e economia circular dentro do Centro de Tecnologia.">
+  <meta property="og:image" content="https://vitinnho13.github.io/programas-ambientais-ct-teste/images/logo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Programas Ambientais do CT | Sustentabilidade e Economia Circular na UFRJ">
+  <meta name="twitter:description" content="Projeto de extensão da UFRJ focado em reciclagem, sustentabilidade e economia circular dentro do Centro de Tecnologia.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/icon-192.png">
+
+  <!-- Fontes: Saira Condensed (títulos, alinhada à logo) + Poppins (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@300;400;500;600;700&family=Saira+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <meta name="theme-color" content="#2e8b57">
+
+
+  <!--
+    URL pública do site (produção): https://vitinnho13.github.io/programas-ambientais-ct-teste/
+    Coloque os arquivos na raiz do domínio para links curtos (ex.: vitinnho13.github.io/programas-ambientais-ct-teste/#contato).
+    Logo e metadados já apontam para esse endereço.
+  -->
+</head>
+<body data-cms-page="index"><div role="note" style="padding:.65rem 1rem;text-align:center;background:#fff3cd;color:#664d03;font:500 .9rem Arial,sans-serif">Pr&eacute;via est&aacute;tica de teste &mdash; n&atilde;o possui painel de edi&ccedil;&atilde;o.</div>
+  <!-- ============================================
+       LOADING — animação inicial da página
+       ============================================ -->
+  <div id="page-loader" class="page-loader">
+    <div class="page-loader__inner">
+      <div class="page-loader__spinner" role="status" aria-label="Carregando"></div>
+      <p class="page-loader__text">ProgramasAmbientaisCT</p>
+    </div>
+  </div>
+
+  <!-- Skip link: acessibilidade -->
+  <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- ============================================
+       HEADER — estilo referência: fundo branco, logo à esquerda, menu central
+       ============================================ -->
+  <header class="site-header site-header--light" id="site-header" role="banner">
+    <div class="container header__inner">
+      <div class="header__start">
+        <button type="button" class="programs-drawer-toggle" id="programs-drawer-toggle" aria-expanded="false" aria-controls="programs-drawer" aria-label="Abrir menu de programas do CT">
+          <span class="programs-drawer-toggle__bar"></span>
+          <span class="programs-drawer-toggle__bar"></span>
+          <span class="programs-drawer-toggle__bar"></span>
+        </button>
+        <a href="index.html" class="logo-link" aria-label="Programas Ambientais do CT — página inicial">
+          <img src="images/logo.png" alt="Programas Ambientais do CT — projeto de extensão UFRJ / Centro de Tecnologia" class="logo-img" width="240" height="56" loading="eager" decoding="async">
+        </a>
+      </div>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu de navegação">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" role="navigation" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link nav-link--active" data-nav="home">Home</a></li>
+          <li><a href="#sobre" class="nav-link" data-nav="sobre">Sobre</a></li>
+          <li><a href="#economia-circular" class="nav-link" data-nav="economia-circular">Economia Circular</a></li>
+          <li><a href="#objetivos" class="nav-link" data-nav="objetivos">Objetivos</a></li>
+          <li><a href="#projetos" class="nav-link" data-nav="projetos">Projetos</a></li>
+          <li><a href="#dinamicas" class="nav-link" data-nav="dinamicas">Dinâmicas</a></li>
+          <li><a href="#numeros" class="nav-link" data-nav="numeros">Resultados</a></li>
+          <li><a href="#galeria" class="nav-link" data-nav="galeria">Galeria</a></li>
+          <li><a href="noticias.html" class="nav-link">Notícias</a></li>
+          <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+          <li><a href="#redes" class="nav-link" data-nav="redes">Redes</a></li>
+          <li><a href="#equipe" class="nav-link" data-nav="equipe">Equipe</a></li>
+          <li><a href="#contato" class="nav-link" data-nav="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__extras">
+        <a href="https://atendimento.ct.ufrj.br/" class="header__toplink" target="_blank" rel="noopener noreferrer" aria-label="Portal de atendimento do CT UFRJ (abre em nova aba)">
+          <svg class="header__toplink-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.85" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+            <path d="M15 3h6v6"/>
+            <path d="M10 14L21 3"/>
+          </svg>
+          <span class="header__toplink-text">atendimento.ct.ufrj.br</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <div class="hero-stack" id="home">
+      <section class="hero" aria-labelledby="hero-title" data-cms-section="hero">
+        <div class="hero__bg" role="img" aria-label="Imagem de fundo: sustentabilidade e campus"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <p class="hero__badge reveal" data-reveal>Projeto de Extensão · UFRJ · Centro de Tecnologia</p>
+          <h1 id="hero-title" class="hero__title reveal" data-reveal data-reveal-delay="1">
+            Sustentabilidade e economia circular na <span class="hero__title-accent">UFRJ</span>
+          </h1>
+          <p class="hero__tagline reveal" data-reveal data-reveal-delay="2">
+            Transformando resíduos em consciência sustentável.
+          </p>
+          <p class="hero__subtitle reveal" data-reveal data-reveal-delay="3">
+            O <strong>ProgramasAmbientaisCT</strong> integra estudantes, docentes e a comunidade do CT em ações de reciclagem, reaproveitamento e educação ambiental.
+          </p>
+          <div class="hero__actions reveal" data-reveal data-reveal-delay="4">
+            <a href="#eixos" class="btn btn--primary">Ver nossos eixos</a>
+            <a href="#contato" class="btn btn--outline">Entrar em contato</a>
+          </div>
+        </div>
+        <a href="#eixos" class="hero__scroll" aria-label="Rolar para os eixos do projeto">
+          <span class="hero__scroll-icon"></span>
+        </a>
+      </section>
+    </div>
+
+    <!-- ============================================
+         EIXOS — faixa escura + 3 cards (referência: serviços)
+         ============================================ -->
+    <section class="section eixos section--deep" id="eixos" aria-labelledby="eixos-title" data-cms-section="eixos">
+      <div class="container">
+        <header class="section__header section__header--center section__header--on-dark reveal" data-reveal>
+          <h2 id="eixos-title" class="section__title section__title--light">Fortalecendo o CT com <span class="text-gradient-on-dark">ciência, circularidade e compromisso</span></h2>
+          <p class="section__intro section__intro--on-dark">Três frentes que guiam o ProgramasAmbientaisCT na Universidade Federal do Rio de Janeiro.</p>
+        </header>
+
+        <div class="eixos__grid">
+          <article class="eixo-card reveal" data-reveal>
+            <div class="eixo-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 6l4 8h-8l4-8zm0 36l-4-8h8l-4 8zM6 24l8-4v8l-8-4zm36 0l-8 4v-8l8 4"/></svg>
+            </div>
+            <h3 class="eixo-card__title">Reciclagem</h3>
+            <p class="eixo-card__text">Coleta seletiva, logística no campus e orientação para separação correta de resíduos no dia a dia do CT.</p>
+          </article>
+          <article class="eixo-card reveal" data-reveal data-reveal-delay="1">
+            <div class="eixo-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 4v8M24 36v8M4 24h8M36 24h8"/><circle cx="24" cy="24" r="10"/></svg>
+            </div>
+            <h3 class="eixo-card__title">Educação ambiental</h3>
+            <p class="eixo-card__text">Oficinas, palestras e campanhas que traduzem dados e legislação em práticas simples e coletivas.</p>
+          </article>
+          <article class="eixo-card reveal" data-reveal data-reveal-delay="2">
+            <div class="eixo-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="24" cy="24" r="18"/><path d="M24 12v12l9 5"/></svg>
+            </div>
+            <h3 class="eixo-card__title">Economia circular</h3>
+            <p class="eixo-card__text">Reaproveitamento de materiais, redução de desperdício e visão de ciclo fechado alinhada à inovação no CT.</p>
+          </article>
+        </div>
+
+        <div class="eixos__actions reveal" data-reveal>
+          <a href="#projetos" class="btn btn--dark">Ver todas as ações</a>
+          <a href="#contato" class="btn btn--outline-light">Fale conosco</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SOBRE — bloco “benefícios” + institucional + valores
+         ============================================ -->
+    <section class="section sobre" id="sobre" aria-labelledby="sobre-title" data-cms-section="sobre">
+      <div class="container">
+        <div class="benefits reveal" data-reveal>
+          <div class="benefits__content">
+            <span class="section__label">Por que existimos</span>
+            <h2 id="sobre-title" class="benefits__title">Benefícios para quem estuda e trabalha no <span class="text-gradient">Centro de Tecnologia</span></h2>
+            <p class="benefits__text">
+              Um campus mais limpo, menos resíduos enviados a aterro, mais senso de comunidade e oportunidades reais de aplicar conhecimento técnico em problemas ambientais reais — do laboratório à praça de alimentação.
+            </p>
+            <a href="topico.html?p=index&t=por-que-existimos" class="btn btn--primary btn--inline split-cta">Quer conhecer mais?</a>
+          </div>
+          <div class="benefits__media">
+            <img src="https://sintufrj.org.br/wp-content/uploads/2020/05/CT-EM-TRABALHO-REMOTO.jpg" alt="Paisagem verde — sustentabilidade e equilíbrio ambiental" width="640" height="520" loading="lazy">
+          </div>
+        </div>
+
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Quem somos</span>
+          <h3 class="section__title section__title--sm">Sobre o <span class="text-gradient">Programas Ambientais do CT</span></h3>
+        </header>
+
+        <div class="sobre__grid">
+          <div class="sobre__media reveal" data-reveal>
+            <figure class="sobre__figure">
+              <img src="images/EquipePACT.jpeg" alt="Equipe Programas Ambientais do CT" width="600" height="720" loading="lazy">
+            </figure>
+          </div>
+          <div class="sobre__text reveal" data-reveal data-reveal-delay="1">
+            <p class="lead">
+              O ReciclaCT nasceu como um projeto de extensão universitária da UFRJ com o objetivo de incentivar práticas sustentáveis dentro do Centro de Tecnologia. O projeto busca integrar estudantes, professores e a comunidade acadêmica em ações voltadas à reciclagem, reaproveitamento de materiais e conscientização ambiental.
+            </p>
+            <p>
+              Atuamos na interface entre <strong>tecnologia</strong> e <strong>meio ambiente</strong>, estimulando hábitos conscientes e fortalecendo uma cultura de responsabilidade ecológica no campus.
+            </p>
+            <a href="topico.html?p=index&t=quem-somos" class="btn btn--primary btn--inline split-cta">Quer conhecer mais?</a>
+          </div>
+        </div>
+
+        <div id="portal-index-sobre" class="news-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ECONOMIA CIRCULAR — layout alternado
+         ============================================ -->
+    <section class="section economia section--muted" id="economia-circular" aria-labelledby="economia-title" data-cms-section="economia">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Conceito</span>
+          <h2 id="economia-title" class="section__title">Economia <span class="text-gradient">Circular</span> na universidade</h2>
+          <p class="section__intro">Entenda por que o CT da UFRJ é um território estratégico para inovar em sustentabilidade.</p>
+        </header>
+
+        <div class="economia__block reveal" data-reveal>
+          <div class="economia__content">
+            <div class="economia__icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M24 8l4 8h-8l4-8zm0 32l-4-8h8l-4 8zM8 24l8-4v8l-8-4zm32 0l-8 4v-8l8 4z" fill="currentColor"/></svg>
+            </div>
+            <h3 class="economia__heading">O que é economia circular?</h3>
+            <p>É um sistema regenerativo em que o valor dos produtos, materiais e recursos se mantém no ciclo o máximo possível. Em vez do modelo linear “extrair — produzir — descartar”, buscamos <strong>redesenhar fluxos</strong> para reutilizar, reparar e reciclar.</p>
+            <a href="topico.html?p=index&t=o-que-e-economia-circular" class="btn btn--primary btn--inline split-cta">Entenda mais</a>
+          </div>
+          <div class="economia__media">
+            <img src="images/economia circular.webp" alt="Mãos segurando mudas — regeneração e cuidado ambiental" width="1200" height="1600" loading="lazy">
+          </div>
+        </div>
+
+        <div class="economia__block economia__block--reverse reveal" data-reveal>
+          <div class="economia__content">
+            <div class="economia__icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M8 40V18l16-10 16 10v22" stroke="currentColor" stroke-width="2" fill="none"/><path d="M18 40V26h12v14" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            </div>
+            <h3 class="economia__heading">Importância nas universidades</h3>
+            <p>Campi concentram fluxo intenso de resíduos e consumo. Integrar <strong>educação</strong>, <strong>infraestrutura</strong> e <strong>cultura</strong> permite que a UFRJ seja laboratório vivo de políticas sustentáveis replicáveis na sociedade.</p>
+            <a href="topico.html?p=index&t=importancia-nas-universidades" class="btn btn--primary btn--inline split-cta">Quer conhecer mais?</a>
+          </div>
+          <div class="economia__media">
+            <img src="images/importanciaeconomiacircular.jpeg" alt="Espaço corporativo moderno com plantas" width="640" height="480" loading="lazy">
+          </div>
+        </div>
+
+        <div class="economia__highlights">
+          <a href="topico.html?p=index&t=reducao-residuos" class="eco-highlight reveal" data-reveal>
+            <span class="eco-highlight__num">01</span>
+            <h4>Redução de resíduos</h4>
+            <p>Diagnóstico, coleta seletiva e hábitos conscientes diminuem o volume enviado para aterros.</p>
+            <span class="news-card__cta">Quer conhecer mais?</span>
+          </a>
+          <a href="topico.html?p=index&t=reaproveitamento" class="eco-highlight reveal" data-reveal data-reveal-delay="1">
+            <span class="eco-highlight__num">02</span>
+            <h4>Reaproveitamento</h4>
+            <p>Materiais ganham nova vida em oficinas, prototipagem e projetos interdisciplinares.</p>
+            <span class="news-card__cta">Quer conhecer mais?</span>
+          </a>
+          <a href="topico.html?p=index&t=impacto-ambiental-positivo" class="eco-highlight reveal" data-reveal data-reveal-delay="2">
+            <span class="eco-highlight__num">03</span>
+            <h4>Impacto ambiental positivo</h4>
+            <p>Menos extração de matéria-prima, menor pegada de carbono e campus mais saudável.</p>
+            <span class="news-card__cta">Quer conhecer mais?</span>
+          </a>
+        </div>
+
+        <div id="portal-index-economia" class="news-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         OBJETIVOS — cards com hover sofisticado
+         ============================================ -->
+    <section class="section objetivos" id="objetivos" aria-labelledby="objetivos-title" data-cms-section="objetivos">
+      <div class="container">
+        <header class="section__header reveal" data-reveal>
+          <span class="section__label">Nossa missão</span>
+          <h2 id="objetivos-title" class="section__title">Objetivos do <span class="text-gradient">projeto</span></h2>
+        </header>
+
+        <div id="portal-index-objetivos" class="news-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PROJETOS — timeline / ações
+         ============================================ -->
+    <section class="section projetos section--dark" id="projetos" aria-labelledby="projetos-title" data-cms-section="projetos">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label section__label--on-dark">Atuação</span>
+          <h2 id="projetos-title" class="section__title section__title--light">Projetos e <span class="text-gradient">ações</span></h2>
+          <p class="section__intro section__intro--muted">Iniciativas que materializam reciclagem, economia circular e cultura sustentável na UFRJ.</p>
+        </header>
+
+        <div id="portal-index-projetos" class="news-grid"></div>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <img src="images/logo.png" 
+                   alt="Coleta seletiva de recicláveis" 
+                   width="400" 
+                   height="240" 
+                   loading="lazy">
+              <div class="timeline__body">
+                <h3>Coleta seletiva</h3>
+                <p>Organização de pontos estratégicos e orientação sobre separação correta de resíduos no CT.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal data-reveal-delay="1">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card timeline__card--reverse">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80" alt="Oficina em grupo" width="400" height="240" loading="lazy">
+              <div class="timeline__body">
+                <h3>Oficinas</h3>
+                <p>Atividades práticas de reaproveitamento, compostagem e conscientização lúdica.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal data-reveal-delay="2">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <img src="https://images.unsplash.com/photo-1540575467063-027a883d8ac0?w=600&q=80" alt="Palestra em auditório" width="400" height="240" loading="lazy">
+              <div class="timeline__body">
+                <h3>Palestras</h3>
+                <p>Debates com especialistas sobre resíduos, legislação ambiental e inovação verde.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal data-reveal-delay="3">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card timeline__card--reverse">
+              <img src="https://images.unsplash.com/photo-1523293182080-08b45f6af016?w=600&q=80" alt="Campanha ecológica" width="400" height="240" loading="lazy">
+              <div class="timeline__body">
+                <h3>Campanhas ambientais</h3>
+                <p>Comunicação visual e digital para ampliar alcance e engajar toda a comunidade.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal data-reveal-delay="4">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80" alt="Evento sustentável ao ar livre" width="400" height="240" loading="lazy">
+              <div class="timeline__body">
+                <h3>Eventos sustentáveis</h3>
+                <p>Feiras, mutirões e encontros que celebram práticas ecológicas no campus.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal data-reveal-delay="5">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card timeline__card--reverse">
+              <img src="https://images.unsplash.com/photo-1564981797816-104fce4bd6d8?w=600&q=80" alt="Campus universitário" width="400" height="240" loading="lazy">
+              <div class="timeline__body">
+                <h3>Ações dentro da UFRJ</h3>
+                <p>Articulação com centros e coletivos para alinhar esforços e multiplicar resultados.</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================
+         NÚMEROS — contadores animados (JS)
+         ============================================ -->
+    <section class="section numeros" id="numeros" aria-labelledby="numeros-title" data-cms-section="numeros">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Resultados</span>
+          <h2 id="numeros-title" class="section__title">Nossos <span class="text-gradient">números</span></h2>
+        </header>
+        <div class="numeros__grid">
+          <div class="numero-card reveal" data-reveal>
+            <span class="numero-card__value" data-counter data-target="850" data-suffix="+">0</span>
+            <span class="numero-card__label">Alunos impactados</span>
+          </div>
+          <div class="numero-card reveal" data-reveal data-reveal-delay="1">
+            <span class="numero-card__value" data-counter data-target="12" data-suffix=" t">0</span>
+            <span class="numero-card__label">Resíduos reciclados</span>
+          </div>
+          <div class="numero-card reveal" data-reveal data-reveal-delay="2">
+            <span class="numero-card__value" data-counter data-target="45" data-suffix="+">0</span>
+            <span class="numero-card__label">Ações realizadas</span>
+          </div>
+          <div class="numero-card reveal" data-reveal data-reveal-delay="3">
+            <span class="numero-card__value" data-counter data-target="32" data-suffix="+">0</span>
+            <span class="numero-card__label">Participantes do projeto</span>
+          </div>
+        </div>
+        <p class="numeros__note reveal" data-reveal>Números ilustrativos de impacto — ajuste conforme dados reais do ReciclaCT.</p>
+        <div id="portal-index-resultados" class="news-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="dinamicas" aria-labelledby="dinamicas-title">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Aprenda brincando</span>
+          <h2 id="dinamicas-title" class="section__title">Dinâmicas <span class="text-gradient">interativas</span></h2>
+          <p class="section__intro">Quiz, jogos e carrosséis educativos dos programas ambientais do CT.</p>
+        </header>
+        <div class="learn-grid">
+          <a class="learn-card reveal" data-reveal href="reciclact.html#coletores">
+            <span class="learn-card__emoji" aria-hidden="true">♻️</span>
+            <h3>ReciclaCT</h3>
+            <p>Carrossel dos coletores, ciclo dos resíduos, calculadora de impacto e jogo do descarte correto.</p>
+            <span class="learn-card__cta">Quer conhecer mais?</span>
+          </a>
+          <a class="learn-card reveal" data-reveal data-reveal-delay="1" href="ct-eficiente.html#desperdicio">
+            <span class="learn-card__emoji" aria-hidden="true">⚡</span>
+            <h3>CT Eficiente</h3>
+            <p>Caça ao desperdício, simulador de economia de energia e quiz sobre uso racional de água e luz.</p>
+            <span class="learn-card__cta">Quer conhecer mais?</span>
+          </a>
+          <a class="learn-card reveal" data-reveal data-reveal-delay="2" href="ct-verde.html#painel-ambiental">
+            <span class="learn-card__emoji" aria-hidden="true">🌱</span>
+            <h3>CT Verde</h3>
+            <p>Painel ambiental, mitos e verdades e atividades de biodiversidade no campus.</p>
+            <span class="learn-card__cta">Quer conhecer mais?</span>
+          </a>
+          <a class="learn-card reveal" data-reveal data-reveal-delay="3" href="ct-eletro.html">
+            <span class="learn-card__emoji" aria-hidden="true">🔌</span>
+            <h3>Outros programas</h3>
+            <p>Simuladores e quizzes de resíduos eletrônicos e perigosos, com feedback visual imediato.</p>
+            <span class="learn-card__cta">Quer conhecer mais?</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         GALERIA — grid com hover e zoom
+         ============================================ -->
+    <section class="section galeria section--muted" id="galeria" aria-labelledby="galeria-title" data-cms-section="galeria">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Momento</span>
+          <h2 id="galeria-title" class="section__title">Galeria <span class="text-gradient">Programas Ambientais</span></h2>
+        </header>
+        <div class="galeria__grid" role="list">
+          <a href="galeria.html?category=equipe" class="galeria__item reveal" data-reveal role="listitem" style="display: block; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?w=600&q=80" alt="Reciclagem de plástico" width="400" height="300" loading="lazy" data-category-cover="equipe">
+            <span class="galeria__caption">Equipe</span>
+          </a>
+          <a href="galeria.html?category=sustentabilidade" class="galeria__item reveal" data-reveal data-reveal-delay="1" role="listitem" style="display: block; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80" alt="Energia sustentável e natureza" width="400" height="300" loading="lazy" data-category-cover="sustentabilidade">
+            <span class="galeria__caption">Sustentabilidade</span>
+          </a>
+          <a href="galeria.html?category=acoes" class="galeria__item reveal" data-reveal data-reveal-delay="2" role="listitem" style="display: block; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="Ações ecológicas" width="400" height="300" loading="lazy" data-category-cover="acoes">
+            <span class="galeria__caption">Ações</span>
+          </a>
+          <a href="galeria.html?category=estudantes" class="galeria__item reveal" data-reveal role="listitem" style="display: block; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80" alt="Estudantes em atividade" width="400" height="300" loading="lazy" data-category-cover="estudantes">
+            <span class="galeria__caption">Estudantes</span>
+          </a>
+          <a href="galeria.html?category=ufrj" class="galeria__item reveal" data-reveal data-reveal-delay="1" role="listitem" style="display: block; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" alt="Vida universitária UFRJ" width="400" height="300" loading="lazy" data-category-cover="ufrj">
+            <span class="galeria__caption">UFRJ</span>
+          </a>
+          <a href="galeria.html?category=conscientizacao" class="galeria__item reveal" data-reveal data-reveal-delay="2" role="listitem" style="display: block; cursor: pointer;">
+            <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=600&q=80" alt="Plantio e verde" width="400" height="300" loading="lazy" data-category-cover="conscientizacao">
+            <span class="galeria__caption">Conscientização</span>
+          </a>
+        </div>
+        <p class="galeria__more reveal" data-reveal>
+          <a href="galeria.html" class="btn btn--primary">Ver todas as fotos</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- REDES SOCIAIS -->
+    <section class="section redes" id="redes" aria-labelledby="redes-title" data-cms-section="redes">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Comunidade</span>
+          <h2 id="redes-title" class="section__title">Redes <span class="text-gradient">sociais</span></h2>
+          <p class="section__intro">Acompanhe as novidades dos Programas Ambientais do CT.</p>
+        </header>
+        <div class="redes__grid reveal" data-reveal>
+          <a href="https://www.instagram.com/ctambiental" class="redes__card" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong><span>@ctambiental</span></a>
+          <a href="https://linkedin.com" class="redes__card" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong><span>Programas Ambientais CT</span></a>
+          <a href="https://youtube.com" class="redes__card" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong><span>Vídeos e campanhas</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         EQUIPE — cards com foto e redes
+         ============================================ -->
+    <section class="section equipe" id="equipe" aria-labelledby="equipe-title" data-cms-section="equipe">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Pessoas</span>
+          <h2 id="equipe-title" class="section__title">Nossa <span class="text-gradient">equipe</span></h2>
+          <p class="section__intro">Profissionais e estudantes que impulsionam o ReciclaCT no CT/UFRJ.</p>
+        </header>
+        <div class="equipe__grid">
+          <article class="team-card reveal" data-reveal>
+            <div class="team-card__avatar">
+              <img src="images/Marlne Caldas.jpeg" alt="Foto de Marlene Barbosa" width="120" height="120" loading="lazy">
+            </div>
+            <h3 class="team-card__name">Marlene Barbosa Caldas</h3>
+            <p class="team-card__role">Coordenação</p>
+            <p class="team-card__bio">Articula parcerias institucionais e acompanha indicadores do projeto.</p>
+            <div class="team-card__social">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn de Marlene"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 1.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.8 2.6 4.8 6v10h-4v-8.9c0-2.1 0-4.8-2.9-4.8-2.9 0-3.4 2.3-3.4 4.6V24h-4V8z"/></svg></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram de Marlene"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1112 18a5.5 5.5 0 010-11zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM18 6.5a1 1 0 110 2 1 1 0 010-2z"/></svg></a>
+            </div>
+          </article>
+          <article class="team-card reveal" data-reveal data-reveal-delay="1">
+            <div class="team-card__avatar">
+              <img src="images/logo.png" alt="Identidade visual do projeto" width="140" height="140" loading="lazy" onerror="this.src='images/logo.png'">
+            </div>
+            <h3 class="team-card__name">Ana Carolina Gomes Nunes</h3>
+            <p class="team-card__role">Extensionista</p>
+            <p class="team-card__bio">Elabora apresentações para educação ambiental e faz parte da gestão do projeto.</p>
+            <div class="team-card__social">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn de Ana"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 1.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.8 2.6 4.8 6v10h-4v-8.9c0-2.1 0-4.8-2.9-4.8-2.9 0-3.4 2.3-3.4 4.6V24h-4V8z"/></svg></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram de Ana"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1112 18a5.5 5.5 0 010-11zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM18 6.5a1 1 0 110 2 1 1 0 010-2z"/></svg></a>
+            </div>
+          </article>
+          <article class="team-card reveal" data-reveal data-reveal-delay="2">
+            <div class="team-card__avatar">
+              <img src="images/Victor Machado.jpeg" alt="Foto de Victor Machado" width="120" height="120" loading="lazy">
+            </div>
+            <h3 class="team-card__name">Victor Machado</h3>
+            <p class="team-card__role">Extensionista</p>
+            <p class="team-card__bio">Auxilia na parte informática do projeto, Administração do site.</p>
+            <div class="team-card__social">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn de Victor"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 1.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.8 2.6 4.8 6v10h-4v-8.9c0-2.1 0-4.8-2.9-4.8-2.9 0-3.4 2.3-3.4 4.6V24h-4V8z"/></svg></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram de Victor"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1112 18a5.5 5.5 0 010-11zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM18 6.5a1 1 0 110 2 1 1 0 010-2z"/></svg></a>
+            </div>
+          </article>
+          <article class="team-card reveal" data-reveal data-reveal-delay="3">
+            <div class="team-card__avatar">
+              <img src="images/logo.png" alt="Identidade visual do projeto" width="120" height="120" loading="lazy" onerror="this.src='images/logo.png'">
+            </div>
+            <h3 class="team-card__name">Luis Machado</h3>
+            <p class="team-card__role">Extensionista</p>
+            <p class="team-card__bio">Cuida das redes sociais e divulgação das ações.</p>
+            <div class="team-card__social">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn de Luis"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 1.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.8 2.6 4.8 6v10h-4v-8.9c0-2.1 0-4.8-2.9-4.8-2.9 0-3.4 2.3-3.4 4.6V24h-4V8z"/></svg></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram de Luis"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1112 18a5.5 5.5 0 010-11zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM18 6.5a1 1 0 110 2 1 1 0 010-2z"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTATO — formulário + informações
+         ============================================ -->
+    <section class="section contato section--muted" id="contato" aria-labelledby="contato-title" data-cms-section="contato">
+      <div class="container contato__wrap">
+        <div class="contato__info reveal" data-reveal>
+          <span class="section__label">Fale conosco</span>
+          <h2 id="contato-title" class="section__title">Entre em <span class="text-gradient">contato</span></h2>
+          <p class="contato__lead">Quer apoiar, voluntariar-se ou levar o ReciclaCT ao seu núcleo? Envie uma mensagem.</p>
+          <ul class="contato__list">
+            <li>
+              <strong>Número de Contato</strong>
+              <a href="tel:+552139387452">(21) 3938-7452</a>
+            </li>
+            <li>
+              <strong>E-mail</strong>
+              <a href="mailto:ambiental@ct.ufrj.br">ambiental@ct.ufrj.br</a>
+            </li>
+            <li>
+              <strong>Local</strong>
+              <span>Av. Athos da Silveira Ramos, 149 Rio de Janeiro, RJ Cidade Universitária, Prédio do CT, Bl. A, 2° andar, Sl. 4)</span>
+            </li>
+            <li>
+              <strong>Redes sociais</strong>
+              <div class="contato__socials">
+                <a href="https://www.instagram.com/ctambiental?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram ProgramasAmbientaisCT">Instagram</a>
+                <span aria-hidden="true">·</span>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn ProgramasAmbientaisCT">LinkedIn</a>
+                <span aria-hidden="true">·</span>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube ProgramasAmbientaisCT">YouTube</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form"><p>O formul&aacute;rio est&aacute; indispon&iacute;vel nesta pr&eacute;via. Entre em contato pelo e-mail <a href="mailto:ambiental@ct.ufrj.br">ambiental@ct.ufrj.br</a>.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5521999099163?text=Ola%2C%20acessei%20a%20previa%20de%20teste%20e%20gostaria%20de%20falar%20com%20o%20RECICLACT." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp com o ReciclaCT">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16.004 3C9.33 3 4 8.092 4 14.496c0 2.27.742 4.374 2.024 6.09L4 29l8.713-1.954A11.35 11.35 0 0016.004 26C22.678 26 28 20.908 28 14.496 28 8.092 22.678 3 16.004 3zm0 2.4c5.86 0 10.596 4.536 10.596 10.096 0 5.56-4.736 10.104-10.596 10.104a9.05 9.05 0 01-4.56-1.224l-.328-.196-5.088 1.144 1.36-4.848-.208-.336a9.94 9.94 0 01-1.576-5.644C5.408 9.936 10.144 5.4 16.004 5.4zm-5.52 6.144c-.12-.272-.248-.28-.36-.288-.112-.008-.24-.008-.368 0s-.76.152-1.16.496c-.4.344-1.52 1.488-1.52 3.624s1.552 4.208 1.768 4.504c.216.296 2.992 4.56 7.24 6.384 3.576 1.416 4.304 1.136 5.08 1.064.776-.072 2.504-.968 2.856-1.904.352-.936.352-1.736.248-1.904-.104-.168-.368-.272-.768-.472-.4-.2-2.36-1.152-2.72-1.288-.36-.136-.624-.2-.888.2-.264.4-1.016 1.288-1.248 1.552-.232.264-.464.296-.864.096-.4-.2-1.688-.624-3.216-1.992-1.19-1.056-1.992-2.36-2.224-2.76-.232-.4-.024-.616.176-.816.176-.176.4-.464.6-.696.2-.232.264-.4.4-.664.136-.264.068-.496-.032-.696-.104-.2-.888-2.144-1.256-2.936z"/></svg>
+  </a>
+
+  <!-- Voltar ao topo -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Voltar ao topo da página" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer" role="contentinfo" data-cms-section="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" 
+   class="footer__logo-link" 
+   aria-label="ProgramasAmbientaisCT — vitinnho13.github.io/programas-ambientais-ct-teste">
+          <img src="images/logo.png" alt="Programas Ambientais do CT" width="220" height="48">
+</a>
+
+<p class="footer__tagline">ProgramasAmbientaisCT — Projeto de Extensão da UFRJ voltado à sustentabilidade e economia circular.</p>
+      </div>
+      <div class="footer__links">
+        <h3 class="footer__heading">Links rápidos</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#eixos">Eixos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#economia-circular">Economia Circular</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#redes">Redes</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h3 class="footer__heading">Redes</h3>
+        <div class="footer__social-icons">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+        </div>
+        <p class="footer__domain"><a href="index.html">vitinnho13.github.io/programas-ambientais-ct-teste</a></p>
+        <p class="footer__url-hint">Site: <strong>https://vitinnho13.github.io/programas-ambientais-ct-teste</strong> · seções: <strong>vitinnho13.github.io/programas-ambientais-ct-teste/#contato</strong> etc.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; <span id="footer-year"></span> programasambientaisct — UFRJ. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/cms-api.js" defer></script>
+<script src="js/cms-render.js" defer></script>
+
+<script src="js/site-settings.js" defer></script>
+
+
+<script src="js/programs-drawer.js" defer></script>
+
+
+  <script src="js/topics-content.js" defer></script>
+  <script src="js/portal-renderer.js" defer></script>
+  <script src="js/topic-overrides.js" defer></script>
+  <script src="script.js" defer></script>
+  
+</body>
+</html>
+

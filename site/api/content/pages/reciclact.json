@@ -1,0 +1,321 @@
+{
+  "page": {
+    "slug": "reciclact",
+    "title": "ReciclaCT"
+  },
+  "sections": [
+    {
+      "section_key": "hero",
+      "content": {
+        "badge": "Coleta seletiva solidária · Desde 2007",
+        "tagline": "Coleta seletiva, triagem e encaminhamento de recicláveis para cooperativas de catadores.",
+        "subtitle": "Programa piloto que organiza a coleta no CT, doa resíduos sólidos recicláveis a cooperativas e integra educação ambiental à rotina do campus.",
+        "ctaPrimary": {
+          "text": "Conhecer o programa",
+          "href": "#resumo"
+        },
+        "ctaSecondary": {
+          "text": "Entrar em contato",
+          "href": "#contato"
+        }
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "resumo",
+      "content": {
+        "label": "Resumo",
+        "title": "Sobre o <span class=\"text-gradient\">ReciclaCT</span>",
+        "paragraphs": [
+          "O <strong>Recicla CT</strong> é um programa de coleta seletiva lançado em <strong>2007</strong> e integra os Programas Ambientais do Centro de Tecnologia da UFRJ.",
+          "Foi criado para organizar e institucionalizar a coleta informal, além de integrar as diversas iniciativas isoladas de reciclagem existentes na unidade.",
+          "O programa dedica-se à <strong>educação ambiental</strong>: treinamento de funcionários, eventos e divulgação em mídias sociais."
+        ],
+        "badges": [
+          "Desde 2007",
+          "Centro de Triagem",
+          "Cooperativas"
+        ],
+        "slides": [
+          "images/cadeia0.png",
+          "images/cadeia1.png",
+          "images/cadeia2.png",
+          "images/cadeia3.png",
+          "images/cadeia4.png",
+          "images/cadeia5.png"
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "historia",
+      "content": {
+        "_type": "rich",
+        "label": "História",
+        "title": "Linha do tempo do <span class=\"text-gradient\">ReciclaCT</span>",
+        "timeline": [
+          {
+            "year": "2006",
+            "title": "Projeto piloto",
+            "text": "Reitor Aloísio Teixeira designa o CT para implantar coleta seletiva como modelo para a UFRJ."
+          },
+          {
+            "year": "2007",
+            "title": "Criação oficial",
+            "text": "Lançamento do Programa ReciclaCT de coleta seletiva solidária."
+          },
+          {
+            "year": "2010",
+            "title": "Centro de Triagem",
+            "text": "Construção do espaço para receber, separar, prensar e pesar recicláveis."
+          },
+          {
+            "year": "2014–2017",
+            "title": "Fórum Verde",
+            "text": "Eventos ambientais, recepção de calouros e fortalecimento da educação ambiental."
+          },
+          {
+            "year": "2024–2026",
+            "title": "CT-Preserva",
+            "text": "Transformação em projeto de extensão universitária com ampliação das ações educativas."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "coletores",
+      "content": {
+        "label": "Interativo",
+        "title": "Coletores de <span class=\"text-gradient\">Coleta Seletiva</span>",
+        "intro": "Conheça os coletores distribuídos pelo campus e saiba o que descartar em cada um."
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "ciclo",
+      "content": {
+        "_type": "rich",
+        "label": "Ciclo da reciclagem",
+        "title": "O caminho dos <span class=\"text-gradient\">resíduos</span>",
+        "intro": "Clique em cada etapa para entender como o material reciclável percorre o campus até voltar ao mercado.",
+        "cycle": [
+          {
+            "icon": "1️⃣",
+            "title": "Descarte correto",
+            "text": "Você separa o resíduo no coletor adequado espalhado pelo CT."
+          },
+          {
+            "icon": "2️⃣",
+            "title": "Coleta pela equipe",
+            "text": "A equipe do ReciclaCT e catadores recolhem os materiais dos pontos de coleta."
+          },
+          {
+            "icon": "3️⃣",
+            "title": "Centro de Triagem",
+            "text": "Os resíduos chegam ao Centro de Triagem do CT."
+          },
+          {
+            "icon": "4️⃣",
+            "title": "Separação",
+            "text": "Materiais são conferidos e separados por categoria."
+          },
+          {
+            "icon": "5️⃣",
+            "title": "Prensagem e pesagem",
+            "text": "Recicláveis são prensados, pesados e armazenados."
+          },
+          {
+            "icon": "6️⃣",
+            "title": "Coleta da cooperativa",
+            "text": "Caminhão da cooperativa parceira recolhe os materiais."
+          },
+          {
+            "icon": "7️⃣",
+            "title": "Cooperativas",
+            "text": "Catadores organizados comercializam os resíduos."
+          },
+          {
+            "icon": "8️⃣",
+            "title": "Indústria de reciclagem",
+            "text": "Empresas transformam o material em nova matéria-prima."
+          },
+          {
+            "icon": "9️⃣",
+            "title": "Novos produtos",
+            "text": "Materiais reciclados retornam ao mercado em novas formas."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "objetivos",
+      "content": {
+        "label": "Foco",
+        "title": "Objetivo e <span class=\"text-gradient\">base legal</span>",
+        "cards": [
+          {
+            "title": "Coleta seletiva solidária",
+            "desc": "Triagem e encaminhamento de recicláveis para cooperativas de catadores."
+          },
+          {
+            "title": "Decreto 10.936/2022",
+            "desc": "Separação na fonte geradora e destinação às cooperativas de catadores."
+          },
+          {
+            "title": "Impacto no campus",
+            "desc": "Fortalece práticas sustentáveis e integra tecnologia, ciência e preservação ambiental."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "acoes",
+      "content": {
+        "label": "Atuação",
+        "title": "Principais <span class=\"text-gradient\">ações</span>",
+        "items": [
+          "Racionalização no consumo de água e energia",
+          "Triagem e encaminhamento de recicláveis para cooperativas",
+          "Geração de resíduos mapeada no campus",
+          "Coleta pela equipe e atendimento a departamentos e laboratórios",
+          "Centro de Triagem — separa, prensa e pesa"
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "extensao",
+      "content": {
+        "_type": "rich",
+        "label": "Extensão universitária",
+        "title": "Projeto <span class=\"text-gradient\">CT-Preserva</span>",
+        "intro": "Coordenado por <strong>Marlene Barbosa Caldas</strong>, o ReciclaCT evoluiu para projeto de extensão que integra todos os programas ambientais do CT.",
+        "team": [
+          {
+            "name": "Victor Machado",
+            "role": "Extensionista · CCMN/UFRJ",
+            "bio": "Educação ambiental, monitoramento de coletores e representação institucional."
+          },
+          {
+            "name": "Luis Machado",
+            "role": "Extensionista · CCMN/UFRJ",
+            "bio": "Gestão de resíduos, treinamentos e apoio operacional na triagem."
+          },
+          {
+            "name": "Ana Carolina Gomes",
+            "role": "Extensionista · CCMN/UFRJ",
+            "bio": "Feiras de conhecimento, visitas guiadas e ações de conscientização."
+          }
+        ],
+        "items": [
+          "🏫 Palestras e apresentações para calouros e feiras de conhecimento",
+          "♻️ Monitoramento e numeração dos coletores pelo campus",
+          "👷 Treinamento de funcionários de limpeza e catadores",
+          "🌎 SIAC, Feira de Carreiras, UFRJ Mar e parcerias com Fiocruz",
+          "💻 Casamata digital para resíduos eletroeletrônicos e perigosos"
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "numeros",
+      "content": {
+        "counters": [
+          {
+            "target": 850,
+            "suffix": "+",
+            "label": "Pessoas impactadas"
+          },
+          {
+            "target": 12,
+            "suffix": " t",
+            "label": "Resíduos reciclados"
+          },
+          {
+            "target": 45,
+            "suffix": "+",
+            "label": "Ações realizadas"
+          },
+          {
+            "target": 32,
+            "suffix": "+",
+            "label": "Participantes"
+          }
+        ],
+        "note": "Ajuste conforme dados reais do ReciclaCT e do Centro de Triagem."
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "cooperativas",
+      "content": {
+        "_type": "rich",
+        "label": "Economia solidária",
+        "title": "Cooperativas de catadores",
+        "intro": "As cooperativas são organizações de catadores que comercializam materiais recicláveis, gerando renda e inclusão social.",
+        "benefits": [
+          {
+            "icon": "💰",
+            "title": "Geração de renda",
+            "text": "A reciclagem é fonte de trabalho e renda para famílias."
+          },
+          {
+            "icon": "👨‍👩‍👧‍👦",
+            "title": "Inclusão social",
+            "text": "Fortalecimento da economia circular com justiça social."
+          },
+          {
+            "icon": "♻️",
+            "title": "Destinação correta",
+            "text": "Materiais do CT são encaminhados a cooperativas parceiras."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "contato",
+      "content": {
+        "lead": "Quer agendar coleta, visitar o Centro de Triagem ou apoiar o ReciclaCT? Envie uma mensagem.",
+        "email": "ambiental@ct.ufrj.br",
+        "phone": "(21) 3938-7452"
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "mitos",
+      "content": {
+        "_type": "rich",
+        "label": "Educação",
+        "title": "Mitos e verdades sobre reciclagem",
+        "projects": [
+          {
+            "icon": "❓",
+            "title": "Copo descartável é reciclável?",
+            "text": "Sim, se estiver limpo e seco.",
+            "myths": [
+              {
+                "tag": "Dica",
+                "text": "Enxágue copos e embalagens antes de descartar."
+              }
+            ]
+          },
+          {
+            "icon": "❓",
+            "title": "Caixa de pizza é reciclável?",
+            "text": "A parte limpa sim; a parte engordurada deve ir para rejeito."
+          },
+          {
+            "icon": "❓",
+            "title": "Tampinhas devem ser retiradas da garrafa?",
+            "text": "Não necessariamente — podem ser descartadas junto se o coletor aceitar."
+          }
+        ]
+      },
+      "content_html": null
+    }
+  ]
+}

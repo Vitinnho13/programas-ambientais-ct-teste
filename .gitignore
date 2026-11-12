@@ -1,0 +1,10 @@
+.env
+.env.*
+admin/
+backups/
+node_modules/
+server/
+uploads/
+*.db
+*.sqlite
+*.sqlite3

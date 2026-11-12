@@ -1,0 +1,13 @@
+{
+  "topic": {
+    "program": "index",
+    "slug": "quem-somos",
+    "section": "sobre",
+    "title": "Quem somos",
+    "category": "Conexão / Nossa Gente",
+    "excerpt": "Projeto de extensão da UFRJ que integra reciclagem, reaproveitamento e conscientização ambiental no campus do CT.",
+    "image": "images/EquipePACT.jpeg",
+    "contentHtml": "<p>O <strong>Programas Ambientais do CT</strong> é um projeto da UFRJ voltado a práticas sustentáveis dentro do Centro de Tecnologia. Criado a partir do histórico do ReciclaCT, o projeto integra estudantes, professores e a comunidade acadêmica em ações de reciclagem, reaproveitamento de materiais e educação ambiental.</p><p>Atuamos na interface entre <strong>tecnologia</strong> e <strong>meio ambiente</strong>, estimulando hábitos conscientes e fortalecendo uma cultura de responsabilidade ecológica no campus.</p>",
+    "blocks": []
+  }
+}

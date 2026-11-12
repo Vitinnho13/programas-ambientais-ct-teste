@@ -1,0 +1,356 @@
+{
+  "page": {
+    "slug": "index",
+    "title": "Página Inicial"
+  },
+  "sections": [
+    {
+      "section_key": "hero",
+      "content": {
+        "badge": "Projeto de Extensão · UFRJ · Centro de Tecnologia",
+        "title": "Sustentabilidade e economia circular na <span class=\"hero__title-accent\">UFRJ</span>",
+        "tagline": "Transformando resíduos em consciência sustentável.",
+        "subtitle": "O <strong>Programas Ambientais do CT</strong> integra estudantes, docentes e a comunidade do CT em ações de reciclagem, reaproveitamento e educação ambiental.",
+        "ctaPrimary": {
+          "text": "Ver nossos eixos",
+          "href": "#eixos"
+        },
+        "ctaSecondary": {
+          "text": "Entrar em contato",
+          "href": "#contato"
+        }
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "eixos",
+      "content": {
+        "title": "Fortalecendo o CT com <span class=\"text-gradient-on-dark\">ciência, circularidade e compromisso</span>",
+        "intro": "Três frentes que guiam o ProgramasAmbientaisCT na Universidade Federal do Rio de Janeiro.",
+        "cards": [
+          {
+            "title": "Reciclagem",
+            "text": "Coleta seletiva, logística no campus e orientação para separação correta de resíduos no dia a dia do CT."
+          },
+          {
+            "title": "Educação ambiental",
+            "text": "Oficinas, palestras e campanhas que traduzem dados e legislação em práticas simples e coletivas."
+          },
+          {
+            "title": "Economia circular",
+            "text": "Reaproveitamento de materiais, redução de desperdício e visão de ciclo fechado alinhada à inovação no CT."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "sobre",
+      "content": {
+        "label": "Por que existimos",
+        "title": "<p>Benefícios para quem estuda e trabalha no Centro de Tecnologia</p>",
+        "text": "<p>Um campus mais limpo, menos resíduos enviados a aterro, mais senso de comunidade e oportunidades reais de aplicar conhecimento técnico em problemas ambientais reais — do laboratório à praça de alimentação.</p>",
+        "imageBenefits": "https://sintufrj.org.br/wp-content/uploads/2020/05/CT-EM-TRABALHO-REMOTO.jpg",
+        "quemSomosLabel": "Quem somos",
+        "quemSomosTitle": "<p>Sobre o Programas Ambientais do CT</p>",
+        "imageEquipe": "images/EquipePACT.jpeg",
+        "lead": "<p>O ReciclaCT nasceu como um projeto de coleta seletiva na UFRJ com o objetivo de incentivar práticas sustentáveis dentro do Centro de Tecnologia.</p>",
+        "paragraph": "<p>Atuamos na interface entre <strong>tecnologia </strong>e <strong>meio ambiente</strong>, estimulando hábitos conscientes e fortalecendo uma cultura de responsabilidade ecológica no campus.</p>",
+        "pillars": "<p>[ { \"title\": \"Sustentabilidade\", \"desc\": \"Práticas que equilibram necessidades atuais com a preservação dos recursos para as futuras gerações.\" }, { \"title\": \"Educação Ambiental\", \"desc\": \"Oficinas, palestras e campanhas que transformam informação em atitude no dia a dia da universidade.\" }, { \"title\": \"Economia Circular\", \"desc\": \"Modelo em que resíduos viram insumo, reduzindo desperdício e ampliando o impacto positivo.\" }, { \"title\": \"Impacto Social\", \"desc\": \"Engajamento coletivo que fortalece vínculos entre comunidade acadêmica e práticas ecológicas.\" } ]</p>"
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "economia",
+      "content": {
+        "label": "Conceito",
+        "title": "Economia <span class=\"text-gradient\">Circular</span> na universidade",
+        "intro": "Entenda por que o CT da UFRJ é um território estratégico para inovar em sustentabilidade.",
+        "blocks": [
+          {
+            "heading": "O que é economia circular?",
+            "text": "É um sistema regenerativo em que o valor dos produtos, materiais e recursos se mantém no ciclo o máximo possível. Em vez do modelo linear “extrair — produzir — descartar”, buscamos <strong>redesenhar fluxos</strong> para reutilizar, reparar e reciclar.",
+            "image": "images/economia circular.webp"
+          },
+          {
+            "heading": "Importância nas universidades",
+            "text": "Campi concentram fluxo intenso de resíduos e consumo. Integrar <strong>educação</strong>, <strong>infraestrutura</strong> e <strong>cultura</strong> permite que a UFRJ seja laboratório vivo de políticas sustentáveis replicáveis na sociedade.",
+            "image": "images/importanciaeconomiacircular.jpeg"
+          }
+        ],
+        "highlights": [
+          {
+            "num": "01",
+            "title": "Redução de resíduos",
+            "text": "Diagnóstico, coleta seletiva e hábitos conscientes diminuem o volume enviado para aterros."
+          },
+          {
+            "num": "02",
+            "title": "Reaproveitamento",
+            "text": "Materiais ganham nova vida em oficinas, prototipagem e projetos interdisciplinares."
+          },
+          {
+            "num": "03",
+            "title": "Impacto ambiental positivo",
+            "text": "Menos extração de matéria-prima, menor pegada de carbono e campus mais saudável."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "objetivos",
+      "content": {
+        "label": "Nossa missão",
+        "title": "Objetivos do <span class=\"text-gradient\">projeto</span>",
+        "cards": [
+          {
+            "title": "Reduzir desperdícios",
+            "desc": "Mapear pontos críticos de descarte e propor alternativas viáveis no CT."
+          },
+          {
+            "title": "Incentivar reciclagem",
+            "desc": "Pontos de coleta, sinalização clara e campanhas de engajamento contínuo."
+          },
+          {
+            "title": "Promover educação ambiental",
+            "desc": "Conteúdo acessível que conecta ciência, cidadania e práticas no campus."
+          },
+          {
+            "title": "Integrar tecnologia e sustentabilidade",
+            "desc": "Projetos que usam engenharia e dados para otimizar fluxos de materiais."
+          },
+          {
+            "title": "Estimular ações coletivas",
+            "desc": "Eventos e parcerias que constroem senso de comunidade em torno da causa."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "projetos",
+      "content": {
+        "label": "Atuação",
+        "title": "Projetos e <span class=\"text-gradient\">ações</span>",
+        "intro": "Iniciativas que materializam reciclagem, economia circular e cultura sustentável na UFRJ.",
+        "items": [
+          {
+            "title": "Coleta seletiva",
+            "text": "Organização de pontos estratégicos e orientação sobre separação correta de resíduos no CT.",
+            "image": "images/logo.png"
+          },
+          {
+            "title": "Oficinas",
+            "text": "Atividades práticas de reaproveitamento, compostagem e conscientização lúdica.",
+            "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80"
+          },
+          {
+            "title": "Palestras",
+            "text": "Debates com especialistas sobre resíduos, legislação ambiental e inovação verde.",
+            "image": "https://images.unsplash.com/photo-1540575467063-027a883d8ac0?w=600&q=80"
+          },
+          {
+            "title": "Campanhas ambientais",
+            "text": "Comunicação visual e digital para ampliar alcance e engajar toda a comunidade.",
+            "image": "https://images.unsplash.com/photo-1523293182080-08b45f6af016?w=600&q=80"
+          },
+          {
+            "title": "Eventos sustentáveis",
+            "text": "Feiras, mutirões e encontros que celebram práticas ecológicas no campus.",
+            "image": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80"
+          },
+          {
+            "title": "Ações dentro da UFRJ",
+            "text": "Articulação com centros e coletivos para alinhar esforços e multiplicar resultados.",
+            "image": "https://images.unsplash.com/photo-1564981797816-104fce4bd6d8?w=600&q=80"
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "numeros",
+      "content": {
+        "label": "Resultados",
+        "title": "Nossos <span class=\"text-gradient\">números</span>",
+        "counters": [
+          {
+            "target": 850,
+            "suffix": "+",
+            "label": "Alunos impactados"
+          },
+          {
+            "target": 12,
+            "suffix": " t",
+            "label": "Resíduos reciclados"
+          },
+          {
+            "target": 45,
+            "suffix": "+",
+            "label": "Ações realizadas"
+          },
+          {
+            "target": 32,
+            "suffix": "+",
+            "label": "Participantes do projeto"
+          }
+        ],
+        "note": "Números ilustrativos de impacto — ajuste conforme dados reais do ReciclaCT."
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "galeria",
+      "content": {
+        "label": "Momento",
+        "title": "Galeria <span class=\"text-gradient\">Programas Ambientais</span>",
+        "items": [
+          {
+            "caption": "Equipe",
+            "image": "https://images.unsplash.com/photo-1604187351574-c75ca79f5807?w=600&q=80",
+            "link": "galeria.html?category=equipe",
+            "category": "equipe"
+          },
+          {
+            "caption": "Sustentabilidade",
+            "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80",
+            "link": "galeria.html?category=sustentabilidade",
+            "category": "sustentabilidade"
+          },
+          {
+            "caption": "Ações",
+            "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80",
+            "link": "galeria.html?category=acoes",
+            "category": "acoes"
+          },
+          {
+            "caption": "Estudantes",
+            "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+            "link": "galeria.html?category=estudantes",
+            "category": "estudantes"
+          },
+          {
+            "caption": "UFRJ",
+            "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80",
+            "link": "galeria.html?category=ufrj",
+            "category": "ufrj"
+          },
+          {
+            "caption": "Conscientização",
+            "image": "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=600&q=80",
+            "link": "galeria.html?category=conscientizacao",
+            "category": "conscientizacao"
+          }
+        ],
+        "ctaText": "Ver todas as fotos",
+        "ctaLink": "galeria.html"
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "redes",
+      "content": {
+        "label": "Comunidade",
+        "title": "Redes <span class=\"text-gradient\">sociais</span>",
+        "intro": "Acompanhe as novidades dos Programas Ambientais do CT.",
+        "cards": [
+          {
+            "name": "Instagram",
+            "handle": "@ctambiental",
+            "url": "https://www.instagram.com/ctambiental"
+          },
+          {
+            "name": "LinkedIn",
+            "handle": "Programas Ambientais CT",
+            "url": "https://linkedin.com"
+          },
+          {
+            "name": "YouTube",
+            "handle": "Vídeos e campanhas",
+            "url": "https://youtube.com"
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "equipe",
+      "content": {
+        "label": "Pessoas",
+        "title": "Nossa <span class=\"text-gradient\">equipe</span>",
+        "intro": "Profissionais e estudantes que impulsionam o ReciclaCT no CT/UFRJ.",
+        "members": [
+          {
+            "name": "Marlene Barbosa Caldas",
+            "role": "Coordenação",
+            "bio": "Articula parcerias institucionais e acompanha indicadores do projeto.",
+            "photo": "images/Marlne Caldas.jpeg",
+            "linkedin": "https://linkedin.com",
+            "instagram": "https://instagram.com"
+          },
+          {
+            "name": "Ana Carolina Gomes Nunes",
+            "role": "Extensionista",
+            "bio": "Elabora apresentações para educação ambiental e faz parte da gestão do projeto.",
+            "photo": "images/logo.png",
+            "linkedin": "https://linkedin.com",
+            "instagram": "https://instagram.com"
+          },
+          {
+            "name": "Victor Machado",
+            "role": "Extensionista",
+            "bio": "Auxilia na parte informática do projeto, administração do site.",
+            "photo": "images/Victor Machado.jpeg",
+            "linkedin": "https://linkedin.com",
+            "instagram": "https://instagram.com"
+          },
+          {
+            "name": "Luis Machado",
+            "role": "Extensionista",
+            "bio": "Cuida das redes sociais e divulgação das ações.",
+            "photo": "images/logo.png",
+            "linkedin": "https://linkedin.com",
+            "instagram": "https://instagram.com"
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "contato",
+      "content": {
+        "label": "Fale conosco",
+        "title": "Entre em <span class=\"text-gradient\">contato</span>",
+        "lead": "Quer apoiar, voluntariar-se ou levar o ReciclaCT ao seu núcleo? Envie uma mensagem.",
+        "phone": "(21) 3938-7452",
+        "email": "ambiental@ct.ufrj.br",
+        "address": "Av. Athos da Silveira Ramos, 149 — Cidade Universitária, CT/UFRJ",
+        "whatsapp": "5521999099163",
+        "socials": [
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/ctambiental"
+          },
+          {
+            "label": "LinkedIn",
+            "url": "https://linkedin.com"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://youtube.com"
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "footer",
+      "content": {
+        "tagline": "Programas Ambientais do CT — Projeto de Extensão da UFRJ voltado à sustentabilidade e economia circular.",
+        "domain": "https://vitinnho13.github.io/programas-ambientais-ct-teste/"
+      },
+      "content_html": null
+    }
+  ]
+}

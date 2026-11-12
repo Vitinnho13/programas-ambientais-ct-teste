@@ -1,0 +1,286 @@
+{
+  "page": {
+    "slug": "ct-verde",
+    "title": "CT Verde"
+  },
+  "sections": [
+    {
+      "section_key": "hero",
+      "content": {
+        "badge": "Desde 2010 · Áreas verdes",
+        "tagline": "Conservação, manutenção e ampliação de áreas verdes e de convivência.",
+        "subtitle": "",
+        "ctaPrimary": {
+          "text": "Conhecer",
+          "href": "#resumo"
+        },
+        "ctaSecondary": {
+          "text": "Contato",
+          "href": "#contato"
+        }
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "resumo",
+      "content": {
+        "title": "Sobre o <span class=\"text-gradient\">CT Verde</span>",
+        "paragraphs": [
+          "O <strong>CT Verde</strong> é um programa ambiental criado em <strong>2010</strong> pelos Programas Ambientais do Centro de Tecnologia da UFRJ, com o objetivo de promover o gerenciamento, conservação e ampliação das áreas verdes e espaços de convivência do CT.",
+          "O programa atua por meio de projetos de preservação ambiental, educação ambiental, monitoramento da fauna e flora, melhoria dos espaços verdes e conscientização da comunidade acadêmica."
+        ],
+        "image": "images/logo_ctverde.png"
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "objetivos",
+      "content": {
+        "_type": "rich",
+        "label": "Nossos objetivos",
+        "title": "Metas do <span class=\"text-gradient\">CT Verde</span>",
+        "objectives": [
+          "Conservar as áreas verdes existentes do Centro de Tecnologia.",
+          "Ampliar espaços de convivência sustentáveis.",
+          "Promover educação ambiental na comunidade universitária.",
+          "Monitorar e proteger a fauna e a flora do CT.",
+          "Incentivar a participação de estudantes, docentes e técnicos.",
+          "Desenvolver projetos de sustentabilidade e agroecologia."
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "historia",
+      "content": {
+        "_type": "rich",
+        "label": "História",
+        "title": "Linha do tempo do <span class=\"text-gradient\">CT Verde</span>",
+        "timeline": [
+          {
+            "year": "2010",
+            "title": "Criação oficial",
+            "text": "Portaria nº 47/2010 institui o CT Verde como programa ambiental do Centro de Tecnologia."
+          },
+          {
+            "year": "2013",
+            "title": "Suspensão temporária",
+            "text": "Atividades pausadas para reorganização institucional."
+          },
+          {
+            "year": "2015",
+            "title": "Retomada",
+            "text": "O programa volta com novas ações de arborização e educação ambiental."
+          },
+          {
+            "year": "2017",
+            "title": "Planejamento intensivo",
+            "text": "Mais de 26 reuniões para planejar e executar ações ambientais no campus."
+          },
+          {
+            "year": "2026",
+            "title": "Expansão",
+            "text": "Integração com CT-Preserva, agrofloresta, compostagem e monitoramento da biodiversidade."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "comissao",
+      "content": {
+        "_type": "rich",
+        "label": "Como funciona",
+        "title": "Coordenação e parcerias",
+        "intro": "O CT Verde é coordenado por uma comissão com docentes, técnicos administrativos e estudantes, reunindo-se mensalmente para discutir propostas ambientais.",
+        "items": [
+          "👨‍🏫 Docentes do CT",
+          "👩‍💼 Técnicos administrativos",
+          "👨‍🎓 Estudantes extensionistas",
+          "🤝 Parcerias com Unidades do CT, Prefeitura Universitária, EPlan/CT, Projeto MUDA e Decania"
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "projetos",
+      "content": {
+        "_type": "rich",
+        "label": "Projetos",
+        "title": "Projetos e <span class=\"text-gradient\">campanhas</span>",
+        "projects": [
+          {
+            "icon": "🌳",
+            "title": "Levantamento de Árvores",
+            "text": "Monitoramento das árvores do CT para identificar exemplares saudáveis, em risco, com necessidade de poda ou reposição vegetal."
+          },
+          {
+            "icon": "🐶",
+            "title": "Monitoramento do Abandono de Animais",
+            "text": "Identificação de animais abandonados, conscientização sobre posse responsável e apoio à adoção."
+          },
+          {
+            "icon": "🦝",
+            "title": "Monitoramento de Gambás",
+            "text": "Gambás controlam insetos, ajudam no equilíbrio ecológico e não transmitem febre amarela. São animais protegidos por lei."
+          },
+          {
+            "icon": "🦟",
+            "title": "CT no Combate ao Aedes",
+            "text": "Campanha permanente contra mosquitos transmissores de dengue, Zika e chikungunya.",
+            "tips": [
+              "Não deixar água parada.",
+              "Manter caixas d'água fechadas.",
+              "Limpar calhas e ralos.",
+              "Descartar corretamente os resíduos."
+            ]
+          },
+          {
+            "icon": "🐒",
+            "title": "Febre Amarela: A Culpa Não é do Macaco",
+            "text": "Campanha educativa sobre o papel dos primatas no monitoramento epidemiológico.",
+            "myths": [
+              {
+                "tag": "Mito",
+                "text": "O macaco transmite febre amarela."
+              },
+              {
+                "tag": "Verdade",
+                "text": "O macaco é vítima da doença e ajuda no monitoramento."
+              }
+            ]
+          },
+          {
+            "icon": "🌿",
+            "title": "Agrofloresta e Composta CT",
+            "text": "Agrofloresta entre os blocos C/D e compostagem de resíduos orgânicos em adubo para canteiros e hortas."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "beneficios-verdes",
+      "content": {
+        "_type": "rich",
+        "label": "Benefícios",
+        "title": "Por que as áreas verdes importam",
+        "benefits": [
+          {
+            "icon": "🌳",
+            "title": "Redução da temperatura",
+            "text": "Áreas arborizadas diminuem ilhas de calor no campus."
+          },
+          {
+            "icon": "💨",
+            "title": "Qualidade do ar",
+            "text": "Vegetação filtra poluentes e produz oxigênio."
+          },
+          {
+            "icon": "🐦",
+            "title": "Abrigo para fauna",
+            "text": "Habitat para aves, insetos polinizadores e pequenos mamíferos."
+          },
+          {
+            "icon": "😊",
+            "title": "Bem-estar",
+            "text": "Espaços verdes melhoram a convivência da comunidade acadêmica."
+          },
+          {
+            "icon": "🌎",
+            "title": "Biodiversidade",
+            "text": "Conservação de espécies nativas e equilíbrio ecológico."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "curiosidades",
+      "content": {
+        "_type": "rich",
+        "label": "Você sabia?",
+        "title": "Curiosidades ambientais",
+        "items": [
+          "Uma árvore adulta pode absorver dezenas de kg de CO₂ por ano.",
+          "Gambás ajudam a controlar pragas urbanas no CT.",
+          "Áreas verdes reduzem ilhas de calor em campus urbanos.",
+          "A compostagem pode reduzir significativamente resíduos orgânicos enviados ao lixo."
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "perspectivas",
+      "content": {
+        "_type": "rich",
+        "label": "Futuro",
+        "title": "Projetos estratégicos <span class=\"text-gradient\">2026</span>",
+        "projects": [
+          {
+            "icon": "🌡️",
+            "title": "Monitoramento Climático",
+            "text": "Sensores de temperatura, umidade, índice de calor e qualidade do ar."
+          },
+          {
+            "icon": "🦋",
+            "title": "Inventário Digital da Biodiversidade",
+            "text": "Catálogo online de aves, gambás, polinizadores, árvores e plantas ornamentais."
+          },
+          {
+            "icon": "🗺️",
+            "title": "Mapa Verde Interativo",
+            "text": "Visualização de árvores catalogadas, agrofloresta, compostagem e pontos de observação."
+          },
+          {
+            "icon": "🌳",
+            "title": "Adote uma Árvore",
+            "text": "Acompanhamento de espécie, localização, data de plantio e curiosidades."
+          },
+          {
+            "icon": "🌱",
+            "title": "Jardim Sustentável da Triagem",
+            "text": "Requalificação da área do ReciclaCT com canteiros, reaproveitamento de madeira e oficina verde."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "numeros",
+      "content": {
+        "counters": [
+          {
+            "target": 200,
+            "suffix": "+",
+            "label": "Árvores monitoradas"
+          },
+          {
+            "target": 8,
+            "suffix": "",
+            "label": "Campanhas realizadas"
+          },
+          {
+            "target": 5,
+            "suffix": "",
+            "label": "Projetos ativos"
+          },
+          {
+            "target": 120,
+            "suffix": "+",
+            "label": "Pessoas impactadas"
+          }
+        ],
+        "note": "Ajuste conforme dados reais do CT Verde."
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "contato",
+      "content": {
+        "lead": "Quer participar das ações de arborização e manutenção de áreas verdes? Fale conosco."
+      },
+      "content_html": null
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "page": {
+    "slug": "ct-residuos",
+    "title": "CT Resíduos Perigosos"
+  },
+  "sections": [
+    {
+      "section_key": "hero",
+      "content": {
+        "badge": "Resíduos Classe I · NBR 10.004",
+        "tagline": "Gestão de resíduos perigosos conforme legislação ambiental.",
+        "subtitle": "",
+        "ctaPrimary": {
+          "text": "Conhecer",
+          "href": "#resumo"
+        },
+        "ctaSecondary": {
+          "text": "Banco de dados",
+          "href": "#contato"
+        }
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "resumo",
+      "content": {
+        "title": "Sobre o <span class=\"text-gradient\">CT Resíduos Perigosos</span>",
+        "paragraphs": [
+          "O <strong>CT Resíduos Perigosos</strong> promove a gestão ambientalmente adequada dos resíduos Classe I gerados no Centro de Tecnologia e em unidades do CCMN.",
+          "Atua na orientação técnica, armazenamento seguro, transporte, tratamento e destinação final, protegendo o meio ambiente e a saúde da comunidade universitária."
+        ],
+        "image": "images/logo_ctresiduosperigosos.png"
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "historia",
+      "content": {
+        "_type": "rich",
+        "label": "História",
+        "title": "Linha do tempo <span class=\"text-gradient\">Resíduos Perigosos</span>",
+        "timeline": [
+          {
+            "year": "2012",
+            "title": "CT Destinação Responsável",
+            "text": "Criação do programa de gestão de resíduos Classe I."
+          },
+          {
+            "year": "2013",
+            "title": "Resíduos químicos",
+            "text": "Atuação com laboratórios do CT e CCMN."
+          },
+          {
+            "year": "2015",
+            "title": "Pilhas e baterias",
+            "text": "Parceria para logística reversa."
+          },
+          {
+            "year": "2016",
+            "title": "Lâmpadas fluorescentes",
+            "text": "Destinação de mais de 7.000 lâmpadas."
+          },
+          {
+            "year": "2017",
+            "title": "Contrato especializado",
+            "text": "Destinação de 21 toneladas de resíduos perigosos."
+          },
+          {
+            "year": "2026",
+            "title": "Casamata integrada",
+            "text": "Proposta de casamata física e sistema digital unificado."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "ciclo",
+      "content": {
+        "_type": "rich",
+        "label": "Gestão segura",
+        "title": "Fluxo de resíduos perigosos",
+        "cycle": [
+          {
+            "icon": "🧪",
+            "title": "Laboratório",
+            "text": "Geração do resíduo na atividade de pesquisa ou ensino."
+          },
+          {
+            "icon": "🔍",
+            "title": "Identificação",
+            "text": "Classificação conforme NBR 10.004 e fichas de segurança."
+          },
+          {
+            "icon": "📦",
+            "title": "Acondicionamento",
+            "text": "Embalagem e rotulagem corretas."
+          },
+          {
+            "icon": "📋",
+            "title": "Solicitação de coleta",
+            "text": "Registro e agendamento com a equipe ambiental."
+          },
+          {
+            "icon": "🏭",
+            "title": "Casamata",
+            "text": "Armazenamento temporário seguro."
+          },
+          {
+            "icon": "🚚",
+            "title": "Transporte e tratamento",
+            "text": "Empresa especializada realiza destinação final."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "riscos",
+      "content": {
+        "_type": "rich",
+        "label": "Classificação",
+        "title": "Resíduos Classe I",
+        "intro": "Substâncias que apresentam periculosidade por inflamabilidade, corrosividade, reatividade, toxicidade ou risco biológico.",
+        "items": [
+          "🧪 Ácidos, bases e solventes de laboratório",
+          "🔋 Pilhas, baterias e lâmpadas fluorescentes",
+          "🏥 Resíduos hospitalares e biológicos",
+          "☣️ Produtos contaminados e reagentes vencidos"
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "casamata",
+      "content": {
+        "_type": "rich",
+        "label": "Infraestrutura",
+        "title": "Casamata de Resíduos Perigosos",
+        "intro": "Estrutura física e digital para armazenamento temporário e controle de resíduos químicos, lâmpadas e baterias.",
+        "benefits": [
+          {
+            "icon": "📋",
+            "title": "Rastreabilidade",
+            "text": "Código, responsável, laboratório, quantidade e classe de risco."
+          },
+          {
+            "icon": "🔒",
+            "title": "Segurança",
+            "text": "Área controlada com procedimentos operacionais."
+          },
+          {
+            "icon": "📊",
+            "title": "Relatórios",
+            "text": "Dados para conformidade legal e indicadores ambientais."
+          }
+        ],
+        "cta": {
+          "text": "Conhecer o programa",
+          "href": "ct-residuosperigosos.html"
+        }
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "capacitacao",
+      "content": {
+        "_type": "rich",
+        "label": "Formação",
+        "title": "Capacitação e estágios",
+        "intro": "O programa oferece oportunidades para estudantes de Química, Engenharia Química, Farmácia, Biotecnologia, Engenharia Ambiental e Segurança do Trabalho.",
+        "items": [
+          "Inventário e classificação de resíduos",
+          "Coletas e gestão digital",
+          "Elaboração de procedimentos operacionais",
+          "Educação ambiental e resposta a emergências"
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "contato",
+      "content": {
+        "lead": "Dúvidas sobre resíduos perigosos? Acesse o banco de dados ou entre em contato."
+      },
+      "content_html": null
+    }
+  ]
+}

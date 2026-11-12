@@ -1,0 +1,91 @@
+{
+  "settings": {
+    "header": {
+      "logo": "images/logo.png",
+      "topLinkText": "atendimento.ct.ufrj.br",
+      "topLinkUrl": "https://atendimento.ct.ufrj.br/"
+    },
+    "hero_backgrounds": {
+      "index": "",
+      "reciclact": "",
+      "ct-eficiente": "",
+      "ct-verde": "",
+      "ct-eletro": "",
+      "ct-residuos": ""
+    }
+  },
+  "galleryCategories": [
+    {
+      "slug": "principal",
+      "name": "Geral",
+      "sort_order": 0,
+      "is_program": 0
+    },
+    {
+      "slug": "equipe",
+      "name": "Equipe",
+      "sort_order": 1,
+      "is_program": 0
+    },
+    {
+      "slug": "sustentabilidade",
+      "name": "Sustentabilidade",
+      "sort_order": 2,
+      "is_program": 0
+    },
+    {
+      "slug": "acoes",
+      "name": "Ações",
+      "sort_order": 3,
+      "is_program": 0
+    },
+    {
+      "slug": "estudantes",
+      "name": "Estudantes",
+      "sort_order": 4,
+      "is_program": 0
+    },
+    {
+      "slug": "ufrj",
+      "name": "UFRJ",
+      "sort_order": 5,
+      "is_program": 0
+    },
+    {
+      "slug": "conscientizacao",
+      "name": "Conscientização",
+      "sort_order": 6,
+      "is_program": 0
+    },
+    {
+      "slug": "reciclact",
+      "name": "ReciclaCT",
+      "sort_order": 10,
+      "is_program": 1
+    },
+    {
+      "slug": "ct-eficiente",
+      "name": "CT Eficiente",
+      "sort_order": 11,
+      "is_program": 1
+    },
+    {
+      "slug": "ct-verde",
+      "name": "CT Verde",
+      "sort_order": 12,
+      "is_program": 1
+    },
+    {
+      "slug": "ct-eletro",
+      "name": "CT Eletroeletrônicos",
+      "sort_order": 13,
+      "is_program": 1
+    },
+    {
+      "slug": "ct-residuos",
+      "name": "Resíduos Perigosos",
+      "sort_order": 14,
+      "is_program": 1
+    }
+  ]
+}

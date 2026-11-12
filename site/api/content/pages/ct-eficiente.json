@@ -1,0 +1,250 @@
+{
+  "page": {
+    "slug": "ct-eficiente",
+    "title": "CT Eficiente"
+  },
+  "sections": [
+    {
+      "section_key": "hero",
+      "content": {
+        "badge": "Desde 2009",
+        "tagline": "Racionalização do consumo de água e energia elétrica no CT/UFRJ.",
+        "subtitle": "",
+        "ctaPrimary": {
+          "text": "Conhecer",
+          "href": "#resumo"
+        },
+        "ctaSecondary": {
+          "text": "Contato",
+          "href": "#contato"
+        }
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "resumo",
+      "content": {
+        "title": "Sobre o <span class=\"text-gradient\">CT Eficiente</span>",
+        "paragraphs": [
+          "Implementado pela Decania do CT em <strong>2009</strong>, o CT Eficiente promove gerenciamento e racionalização do consumo de <strong>água e energia elétrica</strong>.",
+          "Inclui substituição de lâmpadas fluorescentes por LED, material de educação ambiental e campanhas de conscientização."
+        ],
+        "image": "images/logo_cteficiente.png"
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "historia",
+      "content": {
+        "_type": "rich",
+        "label": "História",
+        "title": "Linha do tempo do <span class=\"text-gradient\">CT Eficiente</span>",
+        "timeline": [
+          {
+            "year": "2009",
+            "title": "CT Consciente",
+            "text": "Criação do programa de racionalização de recursos no CT."
+          },
+          {
+            "year": "2014",
+            "title": "CT Eficiente",
+            "text": "Reestruturação e mudança de nome."
+          },
+          {
+            "year": "2015–2018",
+            "title": "Estudos e ações",
+            "text": "Consumo de água e energia, torneiras eficientes, descargas econômicas e iluminação LED."
+          },
+          {
+            "year": "2026",
+            "title": "Monitoramento inteligente",
+            "text": "Ampliação para dashboards, simuladores e educação ambiental digital."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "objetivos",
+      "content": {
+        "cards": [
+          {
+            "title": "Racionalizar recursos",
+            "desc": "Reduzir desperdício de água e energia no campus."
+          },
+          {
+            "title": "Modernizar iluminação",
+            "desc": "Troca de fluorescentes por tecnologia LED."
+          },
+          {
+            "title": "Educar",
+            "desc": "Materiais e campanhas de educação ambiental."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "acoes",
+      "content": {
+        "items": [
+          "Substituição de lâmpadas fluorescentes por LED",
+          "Criação de material de educação ambiental",
+          "Campanhas de conscientização",
+          "Projetos de economia de energia e água"
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "energia-agua",
+      "content": {
+        "_type": "rich",
+        "label": "Recursos",
+        "title": "Consumo de energia e água",
+        "projects": [
+          {
+            "icon": "💡",
+            "title": "Energia elétrica",
+            "text": "LED consome até 80% menos que lâmpadas antigas. Equipamentos em stand-by continuam consumindo energia.",
+            "tips": [
+              "Desligar monitores ao sair.",
+              "Aproveitar luz natural.",
+              "Comunicar lâmpadas queimadas."
+            ]
+          },
+          {
+            "icon": "🚰",
+            "title": "Água",
+            "text": "Recurso finito — pequenas atitudes reduzem desperdício em laboratórios e áreas comuns.",
+            "tips": [
+              "Fechar torneiras corretamente.",
+              "Comunicar vazamentos.",
+              "Usar apenas o necessário."
+            ]
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "numeros",
+      "content": {
+        "counters": [
+          {
+            "target": 35,
+            "suffix": "%",
+            "label": "Economia de energia (meta)"
+          },
+          {
+            "target": 1200,
+            "suffix": "+",
+            "label": "Lâmpadas LED instaladas"
+          },
+          {
+            "target": 18,
+            "suffix": "",
+            "label": "Campanhas realizadas"
+          },
+          {
+            "target": 6,
+            "suffix": "",
+            "label": "Prédios atendidos"
+          }
+        ],
+        "note": "Ajuste conforme medições reais de água e energia no CT."
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "tecnologias",
+      "content": {
+        "_type": "rich",
+        "label": "Tecnologia",
+        "title": "Soluções incentivadas pelo programa",
+        "benefits": [
+          {
+            "icon": "💡",
+            "title": "Iluminação LED",
+            "text": "Menor consumo, maior durabilidade e menos resíduos."
+          },
+          {
+            "icon": "👁️",
+            "title": "Sensores de presença",
+            "text": "Evitam iluminação desnecessária em corredores e salas."
+          },
+          {
+            "icon": "🚰",
+            "title": "Torneiras automáticas",
+            "text": "Reduzem desperdício e aumentam a higiene."
+          },
+          {
+            "icon": "🔧",
+            "title": "Redutores de vazão",
+            "text": "Mantêm o conforto com menor consumo hídrico."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "caca-desperdicio",
+      "content": {
+        "_type": "rich",
+        "label": "Monitoramento",
+        "title": "Caça ao desperdício",
+        "intro": "O programa monitora situações que geram desperdício de recursos no campus.",
+        "items": [
+          "💧 Vazamentos e goteiras",
+          "💡 Luzes acesas sem necessidade",
+          "❄️ Ar-condicionado em ambientes vazios",
+          "🚰 Torneiras defeituosas",
+          "🔌 Equipamentos ligados sem uso"
+        ],
+        "cta": {
+          "text": "Reportar desperdício",
+          "href": "#contato"
+        }
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "contato",
+      "content": {
+        "lead": "Dúvidas sobre eficiência energética e uso racional de água no CT? Entre em contato."
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "perspectivas",
+      "content": {
+        "_type": "rich",
+        "label": "Futuro",
+        "title": "Centro de Controle <span class=\"text-gradient\">Ambiental</span>",
+        "projects": [
+          {
+            "icon": "📱",
+            "title": "Formulário de ocorrências",
+            "text": "Reporte vazamentos, lâmpadas queimadas e defeitos em equipamentos."
+          },
+          {
+            "icon": "🌡️",
+            "title": "Monitoramento inteligente",
+            "text": "Sensores de temperatura, umidade e consumo energético/hídrico."
+          },
+          {
+            "icon": "🏢",
+            "title": "Selo Unidade Eficiente",
+            "text": "Premiação para laboratórios com boas práticas de sustentabilidade."
+          },
+          {
+            "icon": "☀️",
+            "title": "Estudo solar",
+            "text": "Viabilidade de painéis solares nos blocos do CT."
+          }
+        ]
+      },
+      "content_html": null
+    }
+  ]
+}

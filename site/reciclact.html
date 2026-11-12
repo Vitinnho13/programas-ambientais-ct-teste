@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReciclaCT | Programas Ambientais do CT — UFRJ</title>
+  <meta name="description" content="Coleta seletiva solidária e extensão universitária no Centro de Tecnologia da UFRJ desde 2007.">
+  <link rel="stylesheet" href="style.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Saira+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos específicos para o Ciclo Interativo */
+    .cycle-slider {
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-border);
+      padding: 2.5rem;
+      margin-block: 2rem;
+      position: relative;
+    }
+    .cycle-progress {
+      height: 4px;
+      width: 100%;
+      background: var(--color-border);
+      border-radius: 2px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    .cycle-progress-bar {
+      height: 100%;
+      background: var(--color-orange);
+      width: 0%;
+      transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .cycle-display {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      min-height: 200px;
+    }
+    @media (min-width: 768px) {
+      .cycle-display {
+        flex-direction: row;
+        text-align: left;
+        gap: 3rem;
+      }
+    }
+    .cycle-emoji {
+      font-size: 5rem;
+      line-height: 1;
+      transition: transform 0.35s, opacity 0.35s;
+    }
+    .cycle-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .cycle-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--color-border);
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .cycle-dot.is-active {
+      background: var(--color-orange);
+    }
+    .cycle-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="page-programa is-loading"
+  data-program-name="ReciclaCT"
+  data-galeria-title="ReciclaCT"
+  data-galeria-page="galeria-reciclact.html"
+  data-galeria-slug="reciclact"
+  data-numeros-note="Valores reais calculados com base nas pesagens do Centro de Triagem do CT."
+  data-contato-lead="Quer agendar uma coleta, conhecer o Centro de Triagem ou se candidatar para o projeto de extensão? Entre em contato."
+  data-counters='[{"target":2007,"suffix":"","label":"Ano de fundação"},{"target":14,"suffix":" t","label":"Resíduos reciclados"},{"target":3,"suffix":"","label":"Extensionistas ativos"},{"target":35,"suffix":"+","label":"Pontos de coleta"}]'><div role="note" style="padding:.65rem 1rem;text-align:center;background:#fff3cd;color:#664d03;font:500 .9rem Arial,sans-serif">Pr&eacute;via est&aacute;tica de teste &mdash; n&atilde;o possui painel de edi&ccedil;&atilde;o.</div>
+
+  <div id="page-loader" class="page-loader"><div class="page-loader__inner"><div class="page-loader__spinner" role="status" aria-label="Carregando"></div><p class="page-loader__text">ProgramasAmbientaisCT</p></div></div>
+  <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+  <header class="site-header site-header--light" id="site-header" role="banner">
+    <div class="container header__inner">
+      <div class="header__start">
+        <button type="button" class="programs-drawer-toggle" id="programs-drawer-toggle" aria-expanded="false" aria-controls="programs-drawer" aria-label="Abrir menu de programas do CT">
+          <span class="programs-drawer-toggle__bar"></span><span class="programs-drawer-toggle__bar"></span><span class="programs-drawer-toggle__bar"></span>
+        </button>
+        <a href="index.html" class="logo-link"><img src="images/logo.png" alt="Programas Ambientais do CT" class="logo-img" width="240" height="56"></a>
+      </div>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu"><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span></button>
+      <nav class="site-nav" id="primary-nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#resumo" class="nav-link">Sobre</a></li>
+          <li><a href="#caminho" class="nav-link">Ciclo</a></li>
+          <li><a href="#coletores" class="nav-link">Coletores</a></li>
+          <li><a href="#impacto" class="nav-link">Calculadora</a></li>
+          <li><a href="#jogo" class="nav-link">Jogo</a></li>
+          <li><a href="#equipe" class="nav-link">Equipe</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header__extras"><a href="https://atendimento.ct.ufrj.br/" class="header__toplink" target="_blank" rel="noopener noreferrer">atendimento.ct.ufrj.br</a></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="hero-stack" id="home">
+      <section class="hero hero--programa" aria-labelledby="hero-title">
+        <div class="hero__bg" role="img" aria-label="Plano de fundo"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content hero__content--logo-only">
+          <img src="images/logo_reciclact.png" alt="ReciclaCT" class="program-hero-logo program-hero-logo--large reveal" data-reveal width="280" height="120" onerror="this.onerror=null;this.src='images/logo.png'">
+          <p class="hero__badge reveal" data-reveal data-reveal-delay="1">Coleta seletiva solidária · Desde 2007</p>
+          <p class="hero__tagline reveal" data-reveal data-reveal-delay="2">Coleta seletiva, triagem e destinação responsável para cooperativas de catadores.</p>
+          <div class="hero__actions reveal" data-reveal data-reveal-delay="3">
+            <a href="#resumo" class="btn btn--primary">Conhecer o programa</a>
+            <a href="#caminho" class="btn btn--outline">Caminho dos Resíduos</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section section--portal" id="portal-section">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Explorar</span>
+          <h2 class="section__title">Tópicos do <span class="text-gradient">ReciclaCT</span></h2>
+          <p class="section__intro">Cards com imagem, resumo e acesso à página completa de cada tema.</p>
+        </header>
+        <div id="portal-reciclact" class="news-grid reveal" data-reveal></div>
+      </div>
+    </section>
+
+
+    <!-- Sobre o Programa -->
+    <section class="section program-resumo" id="resumo">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Resumo</span>
+          <h2 class="section__title">Sobre o <span class="text-gradient">ReciclaCT</span></h2>
+        </header>
+        <div class="program-resumo__grid reveal" data-reveal>
+          <div class="program-resumo__text">
+            <p class="lead">O <strong>ReciclaCT</strong> é o programa piloto de coleta seletiva solidária do Centro de Tecnologia da UFRJ, criado em <strong>2007</strong> para cumprir o antigo <strong>Decreto 5.940/06 (atualizado pelo Decreto 10.936/2022)</strong>, que estabelece a destinação de resíduos recicláveis às cooperativas de catadores.</p>
+            <p>Em <strong>2010</strong> foi inaugurado o <strong>Centro de Triagem</strong> oficial, permitindo que os resíduos gerados em salas de aula, laboratórios e restaurantes no CT fossem centralizados, pesados, prensados e catalogados de forma profissional.</p>
+            <p>O projeto atua na destinação de materiais, treinamento ambiental de funcionários e sensibilização da comunidade universitária, garantindo inclusão social e fortalecimento da economia circular.</p>
+            <div class="program-resumo__meta">
+              <span class="program-badge">Estágio & Extensão</span>
+              <span class="program-badge">Centro de Triagem</span>
+              <span class="program-badge">Inclusão de Cooperativas</span>
+            </div>
+          </div>
+          <div class="benefits__media">
+            <div class="interactive-card" style="background:var(--color-black); color:var(--color-white); border:none; text-align:center; padding:1.5rem;">
+              <h3 style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-orange); margin-top:0;">📊 Linha do Tempo</h3>
+              <ul style="list-style:none; padding:0; text-align:left; line-height:2.2; font-size:0.9rem;">
+                <li><strong>2006:</strong> Apresentação do projeto ao Conselho Superior.</li>
+                <li><strong>2007:</strong> Lançamento oficial do Programa ReciclaCT.</li>
+                <li><strong>2010:</strong> Construção do Centro de Triagem no campus.</li>
+                <li><strong>2017:</strong> Criação do Fórum Verde e expansão de campanhas.</li>
+                <li><strong>2024:</strong> Transformação no Projeto de Extensão <strong>CT-Preserva</strong>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Caminho dos Resíduos (Vídeo / Ciclo Interativo) -->
+    <section class="section section--muted reveal" data-reveal id="caminho">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <span class="section__label">Ciclo</span>
+          <h2 class="section__title">🔄 O Caminho dos Resíduos <span class="text-gradient">no CT</span></h2>
+          <p class="section__intro">Dinamismo interativo: entenda o ciclo completo percorrido pelos materiais desde o descarte até a reciclagem industrial.</p>
+        </header>
+
+        <div class="cycle-slider">
+          <div class="cycle-progress">
+            <div class="cycle-progress-bar" id="cycle-progress-bar"></div>
+          </div>
+          
+          <div class="cycle-display">
+            <div class="cycle-emoji" id="cycle-emoji">🚯</div>
+            <div class="cycle-content">
+              <h3 id="cycle-title" style="font-family:var(--font-display); font-size:1.6rem; margin-top:0; color:var(--color-green);">1. Descarte Correto</h3>
+              <p id="cycle-desc" style="margin:0.5rem 0 0; font-size:1rem; color:var(--color-gray);">Você descarta corretamente o resíduo nos coletores coloridos.</p>
+            </div>
+          </div>
+
+          <div class="cycle-dots" id="cycle-dots"></div>
+
+          <div class="cycle-controls">
+            <button type="button" class="btn btn--outline" id="cycle-prev" style="color:var(--color-black); border-color:var(--color-black);">← Anterior</button>
+            <button type="button" class="btn btn--primary" id="cycle-next">Próximo →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrossel de Coletores (3D) -->
+    <section class="section program-coletores" id="coletores">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Interativo</span>
+          <h2 class="section__title">Coletores de <span class="text-gradient">Coleta Seletiva</span></h2>
+          <p class="section__intro">Conheça os coletores distribuídos pelo campus e saiba o que descartar em cada um. Gire o carrossel movendo o mouse para as laterais e clique para selecionar.</p>
+        </header>
+
+        <div class="coletores-container reveal" data-reveal>
+          <div class="carousel-area" id="carousel-area">
+            <div class="carousel-hover-zone zone-left" aria-hidden="true">&#10094;</div>
+            <div class="carousel-hover-zone zone-right" aria-hidden="true">&#10095;</div>
+            
+            <div class="carousel-3d-wrapper" id="carousel-3d-wrapper">
+              <div class="collector-item" data-index="0" data-color="#111111" data-name="Madeira">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/madeira.png" alt="Coletor de Madeira">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+              <div class="collector-item" data-index="1" data-color="#f58220" data-name="Resíduos Perigosos">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/perigosos.png" alt="Coletor de Resíduos Perigosos">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+              <div class="collector-item" data-index="2" data-color="#2e8b57" data-name="Vidro">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/vidro.png" alt="Coletor de Vidro">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+              <div class="collector-item" data-index="3" data-color="#e53935" data-name="Plástico">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/plastico.png" alt="Coletor de Plástico">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+              <div class="collector-item" data-index="4" data-color="#1e88e5" data-name="Papel">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/papel.png" alt="Coletor de Papel">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+              <div class="collector-item" data-index="5" data-color="#e0e0e0" data-name="Ambulatórios">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/ambulatorios.png" alt="Coletor de Resíduos Ambulatoriais">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+              <div class="collector-item" data-index="6" data-color="#7b1fa2" data-name="Tóxicos">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/toxicos.png" alt="Coletor de Resíduos Tóxicos">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+              <div class="collector-item" data-index="7" data-color="#8d6e63" data-name="Orgânicos">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/organicos.png" alt="Coletor de Orgânicos">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+              <div class="collector-item" data-index="8" data-color="#757575" data-name="Não Reciclável">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/naoreciclaveis.png" alt="Coletor Não Reciclável">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+              <div class="collector-item" data-index="9" data-color="#fdd835" data-name="Metal">
+                <div class="collector-item__img-wrapper">
+                  <img src="images/metal.png" alt="Coletor de Metal">
+                  <div class="collector-item__shadow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="collector-info-panel" id="collector-info-panel">
+            <div class="collector-info-card" id="collector-info-card">
+              <div class="collector-info-header">
+                <div class="collector-color-badge" id="info-color-badge"></div>
+                <h3 class="collector-info-title" id="info-title">Selecione um Coletor</h3>
+              </div>
+              <div class="collector-info-body">
+                <p class="collector-info-desc" id="info-desc">Mova o mouse para os lados ou clique em um coletor para ver o que pode e não pode ser reciclado nele.</p>
+                <div class="collector-items-list" id="info-items-list-container" style="display: none;">
+                  <h4>O que descartar:</h4>
+                  <ul id="info-items-yes"></ul>
+                  <h4>O que NÃO descartar:</h4>
+                  <ul id="info-items-no"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculadora de Impacto Ambiental -->
+    <section class="section section--muted reveal" data-reveal id="impacto">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <span class="section__label">Calculadora</span>
+          <h2 class="section__title">♻️ Calculadora de <span class="text-gradient">Impacto Ecológico</span></h2>
+          <p class="section__intro">Insira a quantidade média de resíduos que você descarta de forma correta e veja os recursos economizados.</p>
+        </header>
+
+        <div class="interactive-card calc-grid">
+          <div class="calc-inputs">
+            <h3 style="font-family:var(--font-display); font-size:1.5rem; margin-top:0; color:var(--color-green);">Sua Contribuição Mensal</h3>
+            <div class="form-group">
+              <label for="calc-pet">Garrafas PET (unidades):</label>
+              <input type="number" id="calc-pet" value="20" min="0" style="width:100%; padding:0.75rem; border:1px solid var(--color-border); border-radius:var(--radius-sm)">
+            </div>
+            <div class="form-group">
+              <label for="calc-metal">Latinhas de Metal / Alumínio (unidades):</label>
+              <input type="number" id="calc-metal" value="15" min="0" style="width:100%; padding:0.75rem; border:1px solid var(--color-border); border-radius:var(--radius-sm)">
+            </div>
+            <div class="form-group">
+              <label for="calc-paper">Papel / Cadernos / Papelão (kg):</label>
+              <input type="number" id="calc-paper" value="5" min="0" style="width:100%; padding:0.75rem; border:1px solid var(--color-border); border-radius:var(--radius-sm)">
+            </div>
+          </div>
+
+          <div class="calc-outputs">
+            <h3 style="font-family:var(--font-display); font-size:1.5rem; margin-top:0; color:var(--color-orange);">Recursos Preservados</h3>
+            
+            <div class="calc-output-item">
+              <span style="font-size:2rem;">🌳</span>
+              <div>
+                <div class="calc-output-item__val" id="out-trees">0</div>
+                <div class="calc-output-item__label">Árvores salvas</div>
+              </div>
+            </div>
+            <div class="calc-output-item">
+              <span style="font-size:2rem;">💧</span>
+              <div>
+                <div class="calc-output-item__val" id="out-water">0 L</div>
+                <div class="calc-output-item__label">Água economizada</div>
+              </div>
+            </div>
+            <div class="calc-output-item">
+              <span style="font-size:2rem;">⚡</span>
+              <div>
+                <div class="calc-output-item__val" id="out-energy">0 kWh</div>
+                <div class="calc-output-item__label">Energia elétrica poupada</div>
+              </div>
+            </div>
+            <div class="calc-output-item">
+              <span style="font-size:2rem;">🌍</span>
+              <div>
+                <div class="calc-output-item__val" id="out-co2">0 kg</div>
+                <div class="calc-output-item__label">Redução de CO₂ evitada</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jogo do Descarte Correto -->
+    <section class="section reveal" data-reveal id="jogo">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <span class="section__label">Jogo</span>
+          <h2 class="section__title">🎮 Jogo do <span class="text-gradient">Descarte Correto</span></h2>
+          <p class="section__intro">Duelo de reciclagem: ordene os resíduos para o coletor certo e pontue!</p>
+        </header>
+
+        <div class="game-box">
+          <div class="game-stats">
+            <div class="game-score">Pontuação: <span id="game-score-val">0</span> / <span id="game-total-val">0</span></div>
+            <div>Etapa do Campus</div>
+          </div>
+
+          <div class="game-item-display">
+            <div class="game-item-display__emoji" id="game-item-emoji">🍼</div>
+            <div class="game-item-display__name" id="game-item-name">Garrafa PET</div>
+          </div>
+
+          <p id="game-result-feedback" style="font-weight:600; font-size:1.1rem; margin-bottom:2rem; min-height:1.5rem;">Escolha o coletor correspondente!</p>
+
+          <div class="game-bins">
+            <button type="button" class="game-bin-btn" data-bin-type="papel" style="--bin-color:#1e88e5">Papel</button>
+            <button type="button" class="game-bin-btn" data-bin-type="plastico" style="--bin-color:#e53935">Plástico</button>
+            <button type="button" class="game-bin-btn" data-bin-type="vidro" style="--bin-color:#2e8b57">Vidro</button>
+            <button type="button" class="game-bin-btn" data-bin-type="metal" style="--bin-color:#fdd835; color:#333;">Metal</button>
+            <button type="button" class="game-bin-btn" data-bin-type="organicos" style="--bin-color:#8d6e63">Orgânico</button>
+            <button type="button" class="game-bin-btn" data-bin-type="reee" style="--bin-color:#0f1f18">REEE</button>
+            <button type="button" class="game-bin-btn" data-bin-type="perigosos" style="--bin-color:#f58220">Perigosos</button>
+            <button type="button" class="game-bin-btn" data-bin-type="rejeito" style="--bin-color:#757575">Rejeito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipe CT-Preserva (Extensão) -->
+    <section class="section section--muted reveal" data-reveal id="equipe">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <span class="section__label">Extensão</span>
+          <h2 class="section__title">🎓 Projeto de Extensão <span class="text-gradient">CT-Preserva</span></h2>
+          <p class="section__intro">O ReciclaCT evoluiu para um projeto acadêmico e integrador com a CCMN/UFRJ.</p>
+        </header>
+
+        <div class="program-resumo__grid">
+          <div class="program-resumo__text">
+            <p class="lead">Atualmente, o projeto é coordenado pela servidora <strong>Marlene Barbosa Caldas</strong> e conta com a participação de três estudantes extensionistas do Bacharelado em <strong>Ciências Matemáticas da Terra (CCMN/UFRJ)</strong>:</p>
+            <ul style="list-style:none; padding:0; line-height:2.2;">
+              <li>👨‍🎓 <strong>Victor Machado:</strong> Informática do projeto e administração de dados.</li>
+              <li>👨‍🎓 <strong>Luis Machado:</strong> Redes sociais e disseminação de campanhas ecológicas.</li>
+              <li>👩‍🎓 <strong>Ana Carolina Gomes:</strong> Formação ambiental, eventos e educação institucional.</li>
+            </ul>
+            <div style="background:var(--color-white); padding:1.5rem; border-radius:var(--radius-md); border:1px solid var(--color-border); margin-top:1.5rem;">
+              <h4 style="margin-top:0; color:var(--color-orange);">📣 Quer ser extensionista?</h4>
+              <p style="font-size:0.9rem; margin:0;">Buscamos graduandos de Engenharia Ambiental, Computação, Química, Geologia e afins para integrar o time. Candidate-se via formulário de contato abaixo!</p>
+            </div>
+          </div>
+
+          <div class="benefits__media">
+            <div class="interactive-card" style="background:var(--color-white); padding:1.5rem; border-radius:var(--radius-md);">
+              <h4 style="font-family:var(--font-display); font-size:1.35rem; margin-top:0; color:var(--color-green);">🛠️ Atuação dos Extensionistas</h4>
+              <ul style="list-style:none; padding:0; font-size:0.88rem; line-height:2;">
+                <li>✔️ Apresentações em salas de aula para calouros de BCMT.</li>
+                <li>✔️ Visitas guiadas com a Engenharia Ambiental no Centro de Triagem.</li>
+                <li>✔️ Rondas periódicas e numeração identificadora nos coletores do CT.</li>
+                <li>✔️ Integração na SIAC e Feira de Carreiras da UFRJ.</li>
+                <li>✔️ Evento ecológico <strong>UFRJ Mar</strong> em Paraty.</li>
+                <li>✔️ Pintura manual da logo substituindo o letreiro de aço roubado.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mitos, Verdades e Erros na Coleta -->
+    <section class="section reveal" data-reveal id="educativo">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <span class="section__label">Educação</span>
+          <h2 class="section__title">🧠 Mitos, Verdades e <span class="text-gradient">Erros Comuns</span></h2>
+          <p class="section__intro">Informação essencial baseada na rotina diária dos catadores do Centro de Triagem.</p>
+        </header>
+
+        <div class="calc-grid">
+          <div class="interactive-card" style="margin:0;">
+            <h3 style="font-family:var(--font-display); font-size:1.5rem; margin-top:0; color:var(--color-orange);">🚨 Top 5 Erros no Descarte</h3>
+            <ul style="padding-left:1.25rem; line-height:2.2; font-size:0.95rem;">
+              <li>❌ <strong>Restos de alimento nas embalagens:</strong> Atraem vetores e estragam fardos inteiros.</li>
+              <li>❌ <strong>Papel molhado ou engordurado:</strong> Perde a propriedade de celulose (ex. guardanapo usado).</li>
+              <li>❌ <strong>Vidro quebrado solto:</strong> Risco grave de cortes e lesões físicas aos catadores. Proteja-os!</li>
+              <li>❌ <strong>Pilhas no lixo comum:</strong> Vazamento de metais pesados que contaminam o solo.</li>
+              <li>❌ <strong>Resíduos eletrônicos misturados:</strong> Devem ser catalogados em casamatas digitais de REEE.</li>
+            </ul>
+          </div>
+
+          <div class="interactive-card" style="margin:0;">
+            <h3 style="font-family:var(--font-display); font-size:1.5rem; margin-top:0; color:var(--color-green);">❓ Mitos & Verdades</h3>
+            <ul style="list-style:none; padding:0; font-size:0.9rem; line-height:2;">
+              <li>❓ <strong>Copo descartável é reciclável?</strong><br><span style="color:var(--color-green); font-weight:600;">Sim</span>, desde que limpo e sem resíduos de café ou refrigerante.</li>
+              <li>❓ <strong>Caixa de pizza pode ir para o papelão?</strong><br><span style="color:var(--color-orange); font-weight:600;">Depende.</span> A parte de cima limpa sim; a base engordurada deve ir para rejeitos.</li>
+              <li>❓ <strong>Tampinhas plásticas devem ser separadas?</strong><br><span style="color:var(--color-green); font-weight:600;">Verdade.</span> Elas possuem polietileno rígido e têm valor comercial alto separado da garrafa PET.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seções Compartilhadas -->
+    <section class="section numeros" id="numeros"><div id="shared-numeros"></div></section>
+    <section class="section galeria section--muted" id="galeria"><div id="shared-galeria"></div></section>
+    <section class="section redes" id="redes"><div id="shared-redes"></div></section>
+    <section class="section contato section--muted" id="contato"><div id="shared-contato"></div></section>
+  </main>
+
+  <a href="https://wa.me/5521999099163?text=Ola%2C%20acessei%20a%20previa%20de%20teste%20e%20gostaria%20de%20falar%20com%20o%20RECICLACT." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.3.7 4.4 2 6.1L4 29l8-2A12.9 12.9 0 0016 27c6.6 0 12-5.4 12-12S22.6 3 16 3z"/></svg></a>
+  <button type="button" class="back-to-top" id="back-to-top" hidden aria-label="Voltar ao topo"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+  
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__brand"><a href="index.html"><img src="images/logo.png" alt="" style="max-width:220px"></a><p class="footer__tagline">ReciclaCT — Programas Ambientais do CT/UFRJ</p></div>
+      <div class="footer__links"><h3 class="footer__heading">Nesta página</h3><ul><li><a href="#resumo">Sobre</a></li><li><a href="#numeros">Resultados</a></li><li><a href="galeria-reciclact.html">Galeria completa</a></li><li><a href="#contato">Contato</a></li></ul></div>
+      <div class="footer__social"><h3 class="footer__heading">Redes</h3><div class="footer__social-icons"><a href="https://instagram.com" target="_blank" rel="noopener">IG</a><a href="https://linkedin.com" target="_blank" rel="noopener">in</a><a href="https://youtube.com" target="_blank" rel="noopener">YT</a></div></div>
+    </div>
+    <div class="footer__bottom"><div class="container footer__bottom-inner"><p>&copy; <span id="footer-year"></span> ReciclaCT — UFRJ</p></div></div>
+  </footer>
+
+  
+  
+  <script src="js/shared-sections.js" defer></script>
+  <script src="js/programs-drawer.js" defer></script>
+  
+  <script src="js/reciclact-carousel.js" defer></script>
+  <script src="js/reciclact-interactive.js" defer></script>
+  
+  <script src="js/topics-content.js" defer></script>
+  <script src="js/portal-renderer.js" defer></script>
+  <script src="js/topic-overrides.js" defer></script>
+  <script src="script.js" defer></script>
+  
+</body>
+</html>

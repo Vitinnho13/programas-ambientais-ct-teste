@@ -1,0 +1,183 @@
+{
+  "page": {
+    "slug": "ct-eletro",
+    "title": "CT Eletroeletrônicos"
+  },
+  "sections": [
+    {
+      "section_key": "hero",
+      "content": {
+        "badge": "Gestão de REEE",
+        "tagline": "Coleta e destinação correta de resíduos de equipamentos eletroeletrônicos.",
+        "subtitle": "",
+        "ctaPrimary": {
+          "text": "Conhecer",
+          "href": "#resumo"
+        },
+        "ctaSecondary": {
+          "text": "Banco de dados",
+          "href": "#contato"
+        }
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "resumo",
+      "content": {
+        "title": "Sobre o <span class=\"text-gradient\">CT Eletroeletrônicos</span>",
+        "paragraphs": [
+          "O <strong>CT Eletroeletrônicos</strong> promove a destinação ambientalmente adequada dos Resíduos de Equipamentos Eletroeletrônicos (REEE) gerados no Centro de Tecnologia.",
+          "Atua na coleta, triagem, reaproveitamento, manutenção, reciclagem e logística reversa de equipamentos eletrônicos."
+        ],
+        "image": "images/logo_cteletroeletronicos.png"
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "historia",
+      "content": {
+        "_type": "rich",
+        "label": "História",
+        "title": "Linha do tempo <span class=\"text-gradient\">REEE</span>",
+        "timeline": [
+          {
+            "year": "2014",
+            "title": "Idealização",
+            "text": "Planejamento do programa de gestão de eletroeletrônicos."
+          },
+          {
+            "year": "2016",
+            "title": "Início oficial",
+            "text": "Atividades de coleta e destinação de REEE no CT."
+          },
+          {
+            "year": "2017",
+            "title": "Primeiros PEVs",
+            "text": "Instalação dos Pontos de Entrega Voluntária."
+          },
+          {
+            "year": "2018",
+            "title": "Cadeia de gestão",
+            "text": "Mapeamento de geradores e desenvolvimento da logística."
+          },
+          {
+            "year": "2026",
+            "title": "Casamata digital",
+            "text": "Expansão com inventário digital e economia circular tecnológica."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "ciclo-reee",
+      "content": {
+        "_type": "rich",
+        "label": "Logística reversa",
+        "title": "O caminho do <span class=\"text-gradient\">eletroeletrônico</span>",
+        "cycle": [
+          {
+            "icon": "📱",
+            "title": "Equipamento em desuso",
+            "text": "Celular, computador ou outro REEE deixa de ser utilizado."
+          },
+          {
+            "icon": "📦",
+            "title": "PEV",
+            "text": "Entrega no Ponto de Entrega Voluntária do CT."
+          },
+          {
+            "icon": "🔍",
+            "title": "Avaliação técnica",
+            "text": "Verificação do estado e potencial de reaproveitamento."
+          },
+          {
+            "icon": "⚙️",
+            "title": "Reparo ou desmontagem",
+            "text": "Equipamento funcional é reutilizado; defeitos simples são reparados."
+          },
+          {
+            "icon": "♻️",
+            "title": "Reciclagem especializada",
+            "text": "Componentes irrecuperáveis seguem para reciclagem certificada."
+          },
+          {
+            "icon": "🌎",
+            "title": "Nova matéria-prima",
+            "text": "Materiais retornam à cadeia produtiva."
+          }
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "riscos",
+      "content": {
+        "_type": "rich",
+        "label": "Riscos ambientais",
+        "title": "Por que REEE não vai no lixo comum",
+        "intro": "Equipamentos contêm metais pesados e substâncias tóxicas que contaminam solo e água se descartados incorretamente.",
+        "items": [
+          "⚠️ Chumbo, mercúrio, cádmio e níquel em componentes",
+          "🔋 Baterias de lítio podem causar incêndios",
+          "☣️ Contaminação do solo e da água",
+          "💎 Perda de materiais valiosos (ouro, cobre, terras raras)"
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "casamata",
+      "content": {
+        "_type": "rich",
+        "label": "Gestão digital",
+        "title": "Casamata de Eletroeletrônicos",
+        "intro": "Espaço físico e digital para armazenamento, catalogação e rastreabilidade dos REEE.",
+        "benefits": [
+          {
+            "icon": "🏷️",
+            "title": "Registro único",
+            "text": "Cada item recebe número, data, origem e destino final."
+          },
+          {
+            "icon": "📊",
+            "title": "Inventário permanente",
+            "text": "Dados para pesquisa, extensão e transparência."
+          },
+          {
+            "icon": "🔧",
+            "title": "Banco de componentes",
+            "text": "Peças reaproveitáveis para projetos estudantis e laboratórios."
+          }
+        ],
+        "cta": {
+          "text": "Conhecer o programa",
+          "href": "ct-eletro.html"
+        }
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "seguranca",
+      "content": {
+        "_type": "rich",
+        "label": "Importante",
+        "title": "Antes de descartar equipamentos",
+        "items": [
+          "⚠️ Apague arquivos e dados pessoais",
+          "⚠️ Remova contas e credenciais",
+          "⚠️ Formate discos e dispositivos",
+          "⚠️ Faça backup do que precisar manter"
+        ]
+      },
+      "content_html": null
+    },
+    {
+      "section_key": "contato",
+      "content": {
+        "lead": "Dúvidas sobre descarte de REEE no CT? Consulte o banco de dados."
+      },
+      "content_html": null
+    }
+  ]
+}

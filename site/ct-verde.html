@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CT Verde | Programas Ambientais do CT — UFRJ</title>
+  <!-- SEO: título e descrição -->
+  <meta name="description" content="Conservação, manutenção e ampliação de áreas verdes e espaços de convivência no Centro de Tecnologia da UFRJ.">
+  <link rel="stylesheet" href="style.css">
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Saira+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS inline para animação flip do Mito vs Verdade -->
+  <style>
+    .myth-card {
+      perspective: 1000px;
+      cursor: pointer;
+      min-height: 200px;
+    }
+    .myth-card__inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .myth-card.is-flipped .myth-card__inner {
+      transform: rotateY(180deg);
+    }
+    .myth-front, .myth-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .myth-front {
+      background: var(--color-white);
+      z-index: 2;
+    }
+    .myth-back {
+      background: var(--color-white);
+      transform: rotateY(180deg);
+      z-index: 1;
+    }
+  </style>
+</head>
+<body class="page-programa is-loading"
+  data-program-name="CT Verde"
+  data-galeria-title="CT Verde"
+  data-galeria-page="galeria-ct-verde.html"
+  data-galeria-slug="ct-verde"
+  data-contato-lead="Quer apoiar as ações do CT Verde ou contribuir com projetos de agroecologia? Fale conosco."
+  data-counters='[{"target":450,"suffix":"+","label":"Árvores catalogadas"},{"target":14,"suffix":"","label":"Projetos e campanhas"},{"target":92,"suffix":"%","label":"Aprovação social"},{"target":1200,"suffix":"+","label":"Pessoas impactadas"}]'><div role="note" style="padding:.65rem 1rem;text-align:center;background:#fff3cd;color:#664d03;font:500 .9rem Arial,sans-serif">Pr&eacute;via est&aacute;tica de teste &mdash; n&atilde;o possui painel de edi&ccedil;&atilde;o.</div>
+
+  <div id="page-loader" class="page-loader"><div class="page-loader__inner"><div class="page-loader__spinner"></div><p class="page-loader__text">ProgramasAmbientaisCT</p></div></div>
+  
+  <header class="site-header site-header--light" id="site-header">
+    <div class="container header__inner">
+      <div class="header__start">
+        <button type="button" class="programs-drawer-toggle" id="programs-drawer-toggle" aria-label="Abrir programas"><span class="programs-drawer-toggle__bar"></span><span class="programs-drawer-toggle__bar"></span><span class="programs-drawer-toggle__bar"></span></button>
+        <a href="index.html" class="logo-link"><img src="images/logo.png" alt="" class="logo-img" width="240" height="56"></a>
+      </div>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-controls="primary-nav"><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span></button>
+      <nav class="site-nav" id="primary-nav"><ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="#resumo" class="nav-link">Sobre</a></li>
+        <li><a href="#historia" class="nav-link">História</a></li>
+        <li><a href="#projetos" class="nav-link">Campanhas</a></li>
+        <li><a href="#triagem-verde" class="nav-link">Triagem</a></li>
+        <li><a href="#painel-ambiental" class="nav-link">Painel 2026</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul></nav>
+      <div class="header__extras"></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="hero-stack"><section class="hero hero--programa">
+      <div class="hero__bg"></div><div class="hero__overlay"></div>
+      <div class="container hero__content hero__content--logo-only">
+        <img src="images/logo_ctverde.png" alt="CT Verde" class="program-hero-logo program-hero-logo--large reveal" data-reveal width="280" height="120" onerror="this.onerror=null;this.src='images/logo.png'">
+        <p class="hero__badge reveal" data-reveal data-reveal-delay="1">Criado em 2010 · Biodiversidade e Convivência</p>
+        <p class="hero__tagline reveal" data-reveal>Conservação, manutenção e ampliação de áreas verdes e espaços de convivência do CT.</p>
+        <div class="hero__actions reveal" data-reveal><a href="#resumo" class="btn btn--primary">Conhecer</a><a href="#painel-ambiental" class="btn btn--outline">Painel Interativo</a></div>
+      </div>
+    </section></div>
+
+    <section class="section section--portal" id="portal-section">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Explorar</span>
+          <h2 class="section__title">Tópicos do <span class="text-gradient">CT Verde</span></h2>
+          <p class="section__intro">Cards com imagem, resumo e acesso à página completa de cada tema.</p>
+        </header>
+        <div id="portal-ct-verde" class="news-grid reveal" data-reveal></div>
+      </div>
+    </section>
+
+
+    <!-- Seção Resumo -->
+    <section class="section program-resumo" id="resumo">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">O que é?</span>
+          <h2 class="section__title">🌳 Conheça o <span class="text-gradient">CT Verde</span></h2>
+        </header>
+        <div class="program-resumo__grid reveal" data-reveal>
+          <div class="program-resumo__text">
+            <p class="lead">O <strong>CT Verde</strong> é um programa ambiental criado em 2010 pelos Programas Ambientais do Centro de Tecnologia da UFRJ, com o objetivo de promover o gerenciamento, conservação e ampliação das áreas verdes e espaços de convivência do CT.</p>
+            <p>O programa atua por meio de projetos de preservação ambiental, educação ambiental, monitoramento da fauna e flora, melhoria dos espaços verdes e conscientização da comunidade acadêmica.</p>
+            <h3 style="font-family:var(--font-display); font-size:1.5rem; margin-top:1.5rem;">🎯 Nossos Objetivos</h3>
+            <ul style="list-style:none; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap:0.5rem;">
+              <li>📌 Conservar as áreas verdes existentes.</li>
+              <li>📌 Ampliar espaços de convivência sustentáveis.</li>
+              <li>📌 Promover a educação ambiental.</li>
+              <li>📌 Monitorar e proteger a fauna e a flora do CT.</li>
+              <li>📌 Incentivar a participação da comunidade universitária.</li>
+              <li>📌 Desenvolver projetos de sustentabilidade e agroecologia.</li>
+            </ul>
+          </div>
+          <div class="benefits__media"><img src="images/logo_ctverde.png" alt="Logo CT Verde" loading="lazy" onerror="this.onerror=null;this.src='images/logo.png'"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comissão e Como Funciona -->
+    <section class="section section--muted reveal" data-reveal id="funcionamento">
+      <div class="container">
+        <div class="program-resumo__grid">
+          <div class="benefits__media" style="order: 2;">
+            <div class="interactive-card" style="background:var(--color-black); color:var(--color-white); border:none;">
+              <h3 style="font-family:var(--font-display); font-size:1.8rem; margin-top:0; color:var(--color-orange);">⚙️ Como Funciona?</h3>
+              <p>O CT Verde é coordenado por uma comissão formada por:</p>
+              <ul style="list-style:none; padding:0; line-height:2;">
+                <li>👨‍🏫 <strong>Docentes:</strong> Coordenam pesquisas e metodologias científicas.</li>
+                <li>👩‍💼 <strong>Técnicos Administrativos:</strong> Viabilizam infraestrutura e ações locais.</li>
+                <li>👨‍🎓 <strong>Estudantes:</strong> Atuam ativamente como extensionistas.</li>
+              </ul>
+              <p style="font-size:0.9rem; color:rgba(255,255,255,0.7); margin-top:1rem;">A comissão realiza reuniões mensais para planejar e executar projetos ambientais em parceria com as Unidades do CT, a Prefeitura Universitária, o EPlan/CT, o Projeto MUDA e a Decania do Centro de Tecnologia.</p>
+            </div>
+          </div>
+          <div class="program-resumo__text" style="order: 1;">
+            <h3 style="font-family:var(--font-display); font-size:2rem; margin-top:0;">📜 História do Programa</h3>
+            <p>O CT Verde possui uma história de constante adaptação e esforço acadêmico para transformar a realidade ambiental do Centro de Tecnologia da UFRJ.</p>
+            <div class="pathway">
+              <div class="pathway-step is-active">
+                <h4 class="pathway-step__title">2010 — Criação Oficial</h4>
+                <p class="pathway-step__desc" style="max-height:unset; opacity:1;">Criação oficial do programa CT Verde através da Portaria Decania nº 47/2010.</p>
+              </div>
+              <div class="pathway-step is-active">
+                <h4 class="pathway-step__title">2013 — Suspensão</h4>
+                <p class="pathway-step__desc" style="max-height:unset; opacity:1;">Suspensão temporária devido a reestruturações operacionais.</p>
+              </div>
+              <div class="pathway-step is-active">
+                <h4 class="pathway-step__title">2015 — Retomada</h4>
+                <p class="pathway-step__desc" style="max-height:unset; opacity:1;">Retomada oficial das atividades e planejamento de novas frentes de ação.</p>
+              </div>
+              <div class="pathway-step is-active">
+                <h4 class="pathway-step__title">2017 — Planejamento</h4>
+                <p class="pathway-step__desc" style="max-height:unset; opacity:1;">Mais de 26 reuniões realizadas para consolidação de campanhas permanentes.</p>
+              </div>
+              <div class="pathway-step is-active">
+                <h4 class="pathway-step__title">2026 — Integração e Inovação</h4>
+                <p class="pathway-step__desc" style="max-height:unset; opacity:1;">Consolidação do Jardim da Triagem, sensores inteligentes e painéis em tempo real.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos e Campanhas -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Ações</span>
+          <h2 class="section__title">🌱 Projetos e <span class="text-gradient">Campanhas</span></h2>
+          <p class="section__intro">Conheça nossas frentes de preservação, educação e proteção animal no campus.</p>
+        </header>
+
+        <div class="cards-grid cards-grid--3 reveal" data-reveal>
+          <article class="pillar-card">
+            <div class="pillar-card__icon">🌳</div>
+            <h3 class="pillar-card__title">Levantamento de Árvores</h3>
+            <p class="pillar-card__desc">Monitoramento contínuo das árvores do CT para avaliar a saúde botânica, prevenir queda e planejar podas ecológicas e reposição vegetal.</p>
+          </article>
+          <article class="pillar-card">
+            <div class="pillar-card__icon">🐶</div>
+            <h3 class="pillar-card__title">Abandono de Animais</h3>
+            <p class="pillar-card__desc">Ações de conscientização contra o abandono de cães e gatos. Promoção da posse responsável e divulgação de cartilhas de adoção.</p>
+          </article>
+          <article class="pillar-card">
+            <div class="pillar-card__icon">🦝</div>
+            <h3 class="pillar-card__title">Monitoramento de Gambás</h3>
+            <p class="pillar-card__desc">Os gambás são marsupiais protegidos por lei. Eles ajudam a controlar insetos e escorpiões e não transmitem febre amarela.</p>
+          </article>
+        </div>
+
+        <!-- Combate ao Aedes -->
+        <div class="interactive-card reveal" data-reveal style="margin-top:3rem;">
+          <h3 style="font-family:var(--font-display); font-size:1.8rem; margin-top:0; text-align:center;">🦟 Combate Permanente ao Aedes</h3>
+          <p style="text-align:center; max-width:700px; margin-inline:auto; margin-bottom:2rem;">Ações coordenadas para impedir a proliferação do mosquito transmissor de <strong>Dengue, Zika e Chikungunya</strong> no campus.</p>
+          <div class="cards-grid cards-grid--4">
+            <div class="pillar-card" style="padding:1.25rem; text-align:center;">
+              <span style="font-size:2rem;">🚫</span>
+              <h4 style="margin-block:0.5rem;">Água Parada</h4>
+              <p style="font-size:0.85rem; margin:0;">Não deixar recipientes acumulando água da chuva no campus.</p>
+            </div>
+            <div class="pillar-card" style="padding:1.25rem; text-align:center;">
+              <span style="font-size:2rem;">📦</span>
+              <h4 style="margin-block:0.5rem;">Caixas d'água</h4>
+              <p style="font-size:0.85rem; margin:0;">Garantir o fechamento hermético dos reservatórios dos prédios.</p>
+            </div>
+            <div class="pillar-card" style="padding:1.25rem; text-align:center;">
+              <span style="font-size:2rem;">🧹</span>
+              <h4 style="margin-block:0.5rem;">Limpeza de Calhas</h4>
+              <p style="font-size:0.85rem; margin:0;">Evitar o entupimento de calhas e ralos pluviais do CT.</p>
+            </div>
+            <div class="pillar-card" style="padding:1.25rem; text-align:center;">
+              <span style="font-size:2rem;">♻️</span>
+              <h4 style="margin-block:0.5rem;">Descarte Correto</h4>
+              <p style="font-size:0.85rem; margin:0;">Eliminar garrafas e copos plásticos descartados nas matas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Febre Amarela: Mito vs Verdade -->
+        <div class="interactive-card reveal" data-reveal style="margin-top:3rem; background:rgba(245,130,32,0.04); border-color:rgba(245,130,32,0.2);">
+          <h3 style="font-family:var(--font-display); font-size:1.8rem; margin-top:0; text-align:center; color:var(--color-orange);">🐒 Febre Amarela: A Culpa Não é do Macaco</h3>
+          <p style="text-align:center; max-width:700px; margin-inline:auto; margin-bottom:2rem;">Muitas pessoas culpam os macacos equivocadamente. Clique nos cartões abaixo para virá-los e revelar o Mito e a Verdade.</p>
+          
+          <div class="myth-grid">
+            <div class="myth-card" id="myth-card-1">
+              <div class="myth-card__inner">
+                <div class="myth-front">
+                  <div class="myth-header myth-header--myth">MITO <span>❌</span></div>
+                  <div class="myth-body">
+                    <p style="font-size:1.1rem; font-weight:600;">"Os macacos transmitem febre amarela diretamente para os humanos."</p>
+                    <p style="font-size:0.8rem; color:var(--color-gray); margin-top:1rem;">Clique para virar e ver a verdade.</p>
+                  </div>
+                </div>
+                <div class="myth-back">
+                  <div class="myth-header myth-header--truth">VERDADE <span>✔</span></div>
+                  <div class="myth-body">
+                    <p><strong>A transmissão ocorre através de vetores.</strong> O vírus é transmitido apenas pela picada de mosquitos infectados (como Haemagogus e Sabethes). O macaco é uma vítima da doença e atua como sentinela de alerta para biólogos e médicos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="myth-card" id="myth-card-2">
+              <div class="myth-card__inner">
+                <div class="myth-front">
+                  <div class="myth-header myth-header--myth">MITO <span>❌</span></div>
+                  <div class="myth-body">
+                    <p style="font-size:1.1rem; font-weight:600;">"A presença de macacos no campus representa um perigo de contaminação."</p>
+                    <p style="font-size:0.8rem; color:var(--color-gray); margin-top:1rem;">Clique para virar e ver a verdade.</p>
+                  </div>
+                </div>
+                <div class="myth-back">
+                  <div class="myth-header myth-header--truth">VERDADE <span>✔</span></div>
+                  <div class="myth-body">
+                    <p><strong>Os macacos ajudam a nos proteger.</strong> Quando um macaco adoece, o sistema de vigilância epidemiológica entra em ação imediatamente, vacinando a população local e mapeando a proliferação dos mosquitos. Protegê-los é salvar vidas humanas!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agroecologia e Sustentabilidade -->
+    <section class="section section--muted reveal" data-reveal id="agroecologia">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <span class="section__label">Agroecologia</span>
+          <h2 class="section__title">🌿 Agroecologia e <span class="text-gradient">Compostagem</span></h2>
+        </header>
+
+        <div class="program-resumo__grid">
+          <div class="program-resumo__text">
+            <h3 style="font-family:var(--font-display); font-size:1.6rem; margin-top:0;">🌱 Agrofloresta CT</h3>
+            <p>Um projeto inovador de requalificação urbana entre os blocos C e D do campus do Centro de Tecnologia. Utiliza conceitos de <strong>agrofloresta</strong> para recuperar o solo degradado, aumentar a biodiversidade, plantar espécies alimentícias e atenuar a temperatura local (redução das ilhas de calor).</p>
+            <div class="cards-grid cards-grid--2" style="margin-top:1rem;">
+              <div style="background:var(--color-white); padding:1rem; border-radius:var(--radius-sm); border:1px solid var(--color-border);">
+                <strong>🌡️ Clima:</strong> Melhoria do microclima e redução térmica.
+              </div>
+              <div style="background:var(--color-white); padding:1rem; border-radius:var(--radius-sm); border:1px solid var(--color-border);">
+                <strong>🦋 Fauna:</strong> Refúgio de polinizadores e aves nativas.
+              </div>
+            </div>
+          </div>
+          <div class="benefits__media">
+            <div class="interactive-card" style="background:var(--color-white); border-color:var(--color-green);">
+              <h3 style="font-family:var(--font-display); font-size:1.5rem; margin-top:0; color:var(--color-green);">♻️ Composta CT</h3>
+              <p style="font-size:0.9rem; margin-bottom:1.5rem;">Transformação de resíduos orgânicos coletados nos restaurantes universitários em adubo de alta qualidade.</p>
+              
+              <div class="composta-grid">
+                <div class="composta-column composta-column--yes" style="padding:1rem;">
+                  <h4 style="font-size:1.1rem; margin-bottom:0.5rem;">🥬 O que COMPOSTAR</h4>
+                  <ul id="compost-yes-list" style="list-style:none; padding:0; font-size:0.8rem; line-height:1.8;"></ul>
+                </div>
+                <div class="composta-column composta-column--no" style="padding:1rem;">
+                  <h4 style="font-size:1.1rem; margin-bottom:0.5rem;">🚫 O que EVITAR</h4>
+                  <ul id="compost-no-list" style="list-style:none; padding:0; font-size:0.8rem; line-height:1.8;"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jardim da Triagem -->
+    <section class="section" id="triagem-verde">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Requalificação</span>
+          <h2 class="section__title">🛠️ Projeto Jardim Sustentável <span class="text-gradient">da Triagem</span></h2>
+          <p class="section__intro">A requalificação da área verde no entorno do Centro de Triagem do ReciclaCT.</p>
+        </header>
+
+        <div class="program-resumo__grid reveal" data-reveal>
+          <div class="program-resumo__text">
+            <h3 style="font-family:var(--font-display); font-size:1.6rem; margin-top:0;">🪵 Da Madeira ao Jardim</h3>
+            <p>Reaproveitamos pallets, engradados de madeira e tábuas descartadas encontrados no CT. Em vez de virarem lixo, esses materiais são recuperados pelos extensionistas e transformados em cercas ecológicas, delimitação de canteiros e bancos de convivência.</p>
+            
+            <h3 style="font-family:var(--font-display); font-size:1.6rem; margin-top:1.5rem;">👨‍🎓 Formação dos Extensionistas</h3>
+            <p>Excelente oportunidade de aprendizado prático em três grandes competências:</p>
+            <ul style="list-style:none; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; font-size:0.9rem;">
+              <li>🌳 <strong>Ambiental:</strong> Jardinagem, paisagismo ecológico.</li>
+              <li>🔨 <strong>Técnica:</strong> Carpintaria sustentável e montagem de canteiros.</li>
+              <li>📋 <strong>Gestão:</strong> Planejamento e acompanhamento de indicadores.</li>
+            </ul>
+          </div>
+
+          <div class="benefits__media">
+            <div class="interactive-card">
+              <h4 style="font-family:var(--font-display); font-size:1.35rem; margin-top:0; text-align:center;">📷 Diário Verde (Evolução)</h4>
+              <div class="diario-grid" style="grid-template-columns:1fr; gap:1rem;">
+                <div class="diario-card" style="display:flex; align-items:center; text-align:left; padding:0.5rem; gap:1rem;">
+                  <span style="font-size:2.5rem;">🍂</span>
+                  <div>
+                    <h5 style="margin:0; font-size:1rem;">Antes: Área abandonada</h5>
+                    <p style="margin:0; font-size:0.75rem; color:var(--color-gray)">Acúmulo de entulhos e capim sem manejo.</p>
+                  </div>
+                </div>
+                <div class="diario-card" style="display:flex; align-items:center; text-align:left; padding:0.5rem; gap:1rem;">
+                  <span style="font-size:2.5rem;">🔨</span>
+                  <div>
+                    <h5 style="margin:0; font-size:1rem;">Durante: Limpeza e Carpintaria</h5>
+                    <p style="margin:0; font-size:0.75rem; color:var(--color-gray)">Construção dos cercados ecológicos e plantio.</p>
+                  </div>
+                </div>
+                <div class="diario-card" style="display:flex; align-items:center; text-align:left; padding:0.5rem; gap:1rem;">
+                  <span style="font-size:2.5rem;">🌺</span>
+                  <div>
+                    <h5 style="margin:0; font-size:1rem;">Depois: Revitalização</h5>
+                    <p style="margin:0; font-size:0.75rem; color:var(--color-gray)">Canteiros floridos, espécies nativas e área agradável.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Viveiro CT Verde -->
+        <div class="interactive-card reveal" data-reveal style="margin-top:3rem; background:rgba(46,139,87,0.03); border-color:rgba(46,139,87,0.2);">
+          <h3 style="font-family:var(--font-display); font-size:1.8rem; margin-top:0; text-align:center; color:var(--color-green);">🌱 Viveiro de Mudas CT Verde</h3>
+          <p style="text-align:center; max-width:700px; margin-inline:auto;">Aproveitando a área recuperada da triagem, criamos um pequeno viveiro permanente para a produção de mudas ornamentais, temperos e mudas de árvores nativas para reposição arbórea no CT e em eventos da UFRJ.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Painel Ambiental e Recursos Interativos 2026 -->
+    <section class="section section--muted" id="painel-ambiental">
+      <div class="container">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <span class="section__label">Moderno</span>
+          <h2 class="section__title">📊 Painel Tecnológico <span class="text-gradient">CT Verde 2026</span></h2>
+          <p class="section__intro">Sensores em tempo real, quiz ecológico e inventário digital da biodiversidade do campus.</p>
+        </header>
+
+        <!-- Sensores -->
+        <div class="sensor-grid reveal" data-reveal style="margin-bottom:3rem;">
+          <div class="sensor-card" style="--sensor-color:var(--color-orange)">
+            <span class="sensor-card__status"></span>
+            <p class="sensor-card__title">Temperatura do Campus</p>
+            <p class="sensor-card__val" id="sensor-temp">--°C</p>
+            <p class="sensor-card__desc">Sensor Decania CT (Ilha de Calor)</p>
+          </div>
+          <div class="sensor-card" style="--sensor-color:var(--color-green)">
+            <span class="sensor-card__status"></span>
+            <p class="sensor-card__title">Umidade do Ar</p>
+            <p class="sensor-card__val" id="sensor-hum">--%</p>
+            <p class="sensor-card__desc">Estação EPlan/CT</p>
+          </div>
+          <div class="sensor-card" style="--sensor-color:#1e88e5">
+            <span class="sensor-card__status"></span>
+            <p class="sensor-card__title">Estabilidade CO₂</p>
+            <p class="sensor-card__val" id="sensor-co2">-- ppm</p>
+            <p class="sensor-card__desc">Estimativa de carbono absorvido</p>
+          </div>
+        </div>
+
+        <!-- Inventário Digital e Quiz -->
+        <div class="calc-grid reveal" data-reveal>
+          <div class="interactive-card" style="margin:0;">
+            <h3 style="font-family:var(--font-display); font-size:1.6rem; margin-top:0; color:var(--color-green);">🦋 Inventário da Biodiversidade</h3>
+            <p style="font-size:0.9rem; margin-bottom:1rem;">Navegue pelas principais espécies de fauna e flora que habitam o Centro de Tecnologia.</p>
+            
+            <div class="casamata-tabs" role="tablist" style="margin-bottom:1.5rem;">
+              <button type="button" class="is-active" data-bio-tab="fauna" style="padding:0.5rem 1rem; font-size:0.85rem;">Fauna (Animais)</button>
+              <button type="button" data-bio-tab="flora" style="padding:0.5rem 1rem; font-size:0.85rem;">Flora (Plantas)</button>
+            </div>
+
+            <div id="bio-list" style="display:grid; grid-template-columns:1fr; gap:1rem; transition:opacity 0.2s;">
+              <!-- JS Injeta items aqui -->
+            </div>
+          </div>
+
+          <div class="interactive-card" style="margin:0;">
+            <h3 style="font-family:var(--font-display); font-size:1.6rem; margin-top:0; color:var(--color-orange);">🧠 Quiz Ambiental CT Verde</h3>
+            <p style="font-size:0.9rem; margin-bottom:1.5rem;">Teste seus conhecimentos sobre biodiversidade e convivência consciente no campus.</p>
+            
+            <div class="quiz-box">
+              <div class="quiz-header">
+                <span id="quiz-count">Pergunta 1</span>
+                <span>CT Verde</span>
+              </div>
+              <p class="quiz-question" id="quiz-q">Carregando pergunta...</p>
+              <div class="quiz-options" id="quiz-opts">
+                <!-- Opções injetadas via JS -->
+              </div>
+              <p class="quiz-feedback" id="quiz-feedback" style="display:none;"></p>
+              <button type="button" class="btn btn--primary btn--block" id="quiz-next" hidden>Avançar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Download de Cartilhas -->
+        <div class="interactive-card reveal" data-reveal style="margin-top:3rem;">
+          <h3 style="font-family:var(--font-display); font-size:1.6rem; margin-top:0; text-align:center;">📚 Cartilhas e Materiais Educativos</h3>
+          <p style="text-align:center; font-size:0.9rem; color:var(--color-gray); margin-bottom:2rem;">Faça o download gratuito de materiais preparados pelos extensionistas.</p>
+          <div class="download-grid">
+            <div class="download-card">
+              <h4 class="download-card__title">Posse Responsável</h4>
+              <p class="download-card__desc">Ações de combate ao abandono de cães e gatos e cuidados essenciais no CT.</p>
+              <a href="#" class="btn btn--outline" style="background:var(--color-green); color:white; border:none; padding:0.5rem; font-size:0.85rem;">Baixar PDF</a>
+            </div>
+            <div class="download-card">
+              <h4 class="download-card__title">Gambás do CT</h4>
+              <p class="download-card__desc">Guia informativo sobre por que proteger esse marsupial silvestre.</p>
+              <a href="#" class="btn btn--outline" style="background:var(--color-green); color:white; border:none; padding:0.5rem; font-size:0.85rem;">Baixar PDF</a>
+            </div>
+            <div class="download-card">
+              <h4 class="download-card__title">Combate ao Aedes</h4>
+              <p class="download-card__desc">Fôlder com checklists preventivos contra criadouros de mosquitos.</p>
+              <a href="#" class="btn btn--outline" style="background:var(--color-green); color:white; border:none; padding:0.5rem; font-size:0.85rem;">Baixar PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seções Compartilhadas e Dinâmicas -->
+    <section class="section numeros" id="numeros"><div id="shared-numeros"></div></section>
+    <section class="section galeria section--muted" id="galeria"><div id="shared-galeria"></div></section>
+    <section class="section redes" id="redes"><div id="shared-redes"></div></section>
+    <section class="section contato section--muted" id="contato"><div id="shared-contato"></div></section>
+  </main>
+
+  <button type="button" class="back-to-top" id="back-to-top" hidden aria-label="Topo"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+  <footer class="site-footer"><div class="footer__bottom"><div class="container footer__bottom-inner"><p>&copy; <span id="footer-year"></span> CT Verde — UFRJ</p></div></div></footer>
+  
+  
+  
+  <script src="js/shared-sections.js" defer></script>
+  <script src="js/programs-drawer.js" defer></script>
+  
+  <script src="js/ct-verde-interactive.js" defer></script>
+  
+  <script src="js/topics-content.js" defer></script>
+  <script src="js/portal-renderer.js" defer></script>
+  <script src="js/topic-overrides.js" defer></script>
+  <script src="script.js" defer></script>
+  
+</body>
+</html>

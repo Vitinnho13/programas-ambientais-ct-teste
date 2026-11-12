@@ -1,0 +1,194 @@
+{
+  "collectors": [
+    {
+      "name": "Madeira",
+      "slug": "madeira",
+      "color": "#111111",
+      "description": "Destinado à reciclagem e reaproveitamento de sobras de madeira geradas em obras, oficinas ou embalagens no campus do CT.",
+      "materialsYes": [
+        "Paletes e caixas de engradado de frutas",
+        "Retalhos de madeira sem tratamento químico",
+        "Galhos secos e restos de poda de árvores"
+      ],
+      "materialsNo": [
+        "Madeira tratada com vernizes tóxicos",
+        "Placas de aglomerado ou MDF impregnadas",
+        "Madeira com pregos grandes presos"
+      ],
+      "image_url": "images/madeira.png",
+      "icon_url": "",
+      "sort_order": 0
+    },
+    {
+      "name": "Resíduos Perigosos",
+      "slug": "residuos-perigosos",
+      "color": "#f58220",
+      "description": "Descarte controlado de materiais nocivos à saúde e ao meio ambiente.",
+      "materialsYes": [
+        "Pilhas domésticas",
+        "Baterias de eletrônicos",
+        "Lâmpadas fluorescentes inteiras"
+      ],
+      "materialsNo": [
+        "Lixo comum",
+        "Lâmpadas quebradas",
+        "Reagentes químicos de laboratório"
+      ],
+      "image_url": "images/perigosos.png",
+      "icon_url": "",
+      "sort_order": 1
+    },
+    {
+      "name": "Vidro",
+      "slug": "vidro",
+      "color": "#2e8b57",
+      "description": "O vidro é 100% reciclável. Descarte apenas vidros limpos e secos.",
+      "materialsYes": [
+        "Garrafas de vidro",
+        "Potes de conserva",
+        "Frascos vazios de perfumes"
+      ],
+      "materialsNo": [
+        "Vidros planos de janelas",
+        "Espelhos e cerâmicas",
+        "Lâmpadas incandescentes"
+      ],
+      "image_url": "images/vidro.png",
+      "icon_url": "",
+      "sort_order": 2
+    },
+    {
+      "name": "Plástico",
+      "slug": "plastico",
+      "color": "#e53935",
+      "description": "Recipientes plásticos. Retire resíduos de alimentos das embalagens.",
+      "materialsYes": [
+        "Garrafas PET",
+        "Embalagens de cosméticos",
+        "Sacolas e tampas"
+      ],
+      "materialsNo": [
+        "Embalagens metalizadas",
+        "Tomadas e cabos",
+        "Fraldas descartáveis"
+      ],
+      "image_url": "images/plastico.png",
+      "icon_url": "",
+      "sort_order": 3
+    },
+    {
+      "name": "Papel",
+      "slug": "papel",
+      "color": "#1e88e5",
+      "description": "Papéis e papelões limpos e secos.",
+      "materialsYes": [
+        "Caixas de papelão",
+        "Jornais e revistas",
+        "Embalagens Tetrapak"
+      ],
+      "materialsNo": [
+        "Papel higiênico usado",
+        "Papéis plastificados",
+        "Fotografias"
+      ],
+      "image_url": "images/papel.png",
+      "icon_url": "",
+      "sort_order": 4
+    },
+    {
+      "name": "Ambulatórios",
+      "slug": "ambulatorios",
+      "color": "#9e9e9e",
+      "description": "Resíduos de atendimentos de saúde do campus.",
+      "materialsYes": [
+        "Curativos e gazes contaminados",
+        "Luvas cirúrgicas descartáveis",
+        "Seringas vazias sem agulha"
+      ],
+      "materialsNo": [
+        "Agulhas soltas",
+        "Embalagens limpas de medicamentos",
+        "Medicamentos vencidos"
+      ],
+      "image_url": "images/ambulatorios.png",
+      "icon_url": "",
+      "sort_order": 5
+    },
+    {
+      "name": "Tóxicos",
+      "slug": "toxicos",
+      "color": "#7b1fa2",
+      "description": "Resíduos químicos perigosos de laboratórios do CT.",
+      "materialsYes": [
+        "Reagentes inservíveis",
+        "Luvas contaminadas por químicos",
+        "Frascos vazios de produtos nocivos"
+      ],
+      "materialsNo": [
+        "Lixo comum",
+        "Resíduos biológicos",
+        "Pilhas alcalinas"
+      ],
+      "image_url": "images/toxicos.png",
+      "icon_url": "",
+      "sort_order": 6
+    },
+    {
+      "name": "Orgânicos",
+      "slug": "organicos",
+      "color": "#8d6e63",
+      "description": "Restos de alimentos e resíduos biodegradáveis.",
+      "materialsYes": [
+        "Cascas de frutas e legumes",
+        "Restos de refeições",
+        "Borras de café e chá"
+      ],
+      "materialsNo": [
+        "Plásticos e metais",
+        "Óleo de cozinha",
+        "Madeira tratada"
+      ],
+      "image_url": "images/organicos.png",
+      "icon_url": "",
+      "sort_order": 7
+    },
+    {
+      "name": "Não Reciclável",
+      "slug": "nao-reciclavel",
+      "color": "#757575",
+      "description": "Resíduos que não podem ser reciclados.",
+      "materialsYes": [
+        "Fraldas descartáveis",
+        "Papel higiênico",
+        "Espuma e isopor sujo"
+      ],
+      "materialsNo": [
+        "Papel limpo",
+        "Plástico reciclável",
+        "Metal"
+      ],
+      "image_url": "images/naoreciclaveis.png",
+      "icon_url": "",
+      "sort_order": 8
+    },
+    {
+      "name": "Metal",
+      "slug": "metal",
+      "color": "#fbc02d",
+      "description": "Latas e objetos metálicos ferrosos e não ferrosos.",
+      "materialsYes": [
+        "Latas de alumínio",
+        "Latas de aço",
+        "Tampas metálicas"
+      ],
+      "materialsNo": [
+        "Pilhas e baterias",
+        "Sprays com gás",
+        "Objetos com partes plásticas"
+      ],
+      "image_url": "images/metal.png",
+      "icon_url": "",
+      "sort_order": 9
+    }
+  ]
+}
