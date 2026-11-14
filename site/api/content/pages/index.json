@@ -136,34 +136,40 @@
         "intro": "Iniciativas que materializam reciclagem, economia circular e cultura sustentável na UFRJ.",
         "items": [
           {
+            "slug": "coleta-seletiva",
             "title": "Coleta seletiva",
             "text": "Organização de pontos estratégicos e orientação sobre separação correta de resíduos no CT.",
-            "image": "images/logo.png"
+            "image": "images/IMG_20170405_101647221.jpg"
           },
           {
+            "slug": "oficinas",
             "title": "Oficinas",
             "text": "Atividades práticas de reaproveitamento, compostagem e conscientização lúdica.",
-            "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80"
+            "image": "images/horta-em-casa-1-758x396.jpg"
           },
           {
+            "slug": "palestras",
             "title": "Palestras",
             "text": "Debates com especialistas sobre resíduos, legislação ambiental e inovação verde.",
-            "image": "https://images.unsplash.com/photo-1540575467063-027a883d8ac0?w=600&q=80"
+            "image": "images/EquipePACT.jpeg"
           },
           {
+            "slug": "campanhas-ambientais",
             "title": "Campanhas ambientais",
             "text": "Comunicação visual e digital para ampliar alcance e engajar toda a comunidade.",
-            "image": "https://images.unsplash.com/photo-1523293182080-08b45f6af016?w=600&q=80"
+            "image": "images/RECICLANOVO_v01imagem.jpg"
           },
           {
+            "slug": "eventos-sustentaveis",
             "title": "Eventos sustentáveis",
             "text": "Feiras, mutirões e encontros que celebram práticas ecológicas no campus.",
-            "image": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80"
+            "image": "images/EquipePACT.jpeg"
           },
           {
+            "slug": "acoes-ufrj",
             "title": "Ações dentro da UFRJ",
             "text": "Articulação com centros e coletivos para alinhar esforços e multiplicar resultados.",
-            "image": "https://images.unsplash.com/photo-1564981797816-104fce4bd6d8?w=600&q=80"
+            "image": "images/IMG_20170405_101647221.jpg"
           }
         ]
       },

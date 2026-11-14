@@ -44,7 +44,6 @@
     renderGrid('portal-index-sobre', 'index', 'sobre');
     renderGrid('portal-index-economia', 'index', 'economia');
     renderGrid('portal-index-objetivos', 'index', 'objetivos');
-    renderGrid('portal-index-projetos', 'index', 'projetos');
     renderGrid('portal-index-resultados', 'index', 'resultados');
 
     renderGrid('portal-reciclact', 'reciclact');
