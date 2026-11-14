@@ -2710,6 +2710,17 @@ body.page-programa {
   filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.35));
 }
 
+.hero--programa .program-hero-logo--large {
+  margin-top: 2rem;
+}
+
+.benefits__media--content {
+  width: 100%;
+  height: auto;
+  min-width: 0;
+  overflow: visible;
+}
+
 .programs-drawer__link--tile {
   display: block;
   min-height: 108px;
