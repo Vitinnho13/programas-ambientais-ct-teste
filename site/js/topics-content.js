@@ -717,20 +717,37 @@
 
   function mergeFields(target, saved) {
     if (!saved) return target;
-    if (saved.title) target.title = saved.title;
-    if (saved.category) target.category = saved.category;
-    if (saved.excerpt) target.excerpt = saved.excerpt;
-    if (saved.image) target.image = saved.image;
-    if (saved.contentHtml) target.contentHtml = saved.contentHtml;
-    if (Array.isArray(saved.blocks)) target.blocks = saved.blocks;
-    if (saved.section) target.section = saved.section;
-    return target;
+    var merged = Object.assign({}, target);
+    if (saved.title != null) merged.title = saved.title;
+    if (saved.category != null) merged.category = saved.category;
+    if (saved.excerpt != null) merged.excerpt = saved.excerpt;
+    if (saved.image != null) merged.image = saved.image;
+    if (saved.contentHtml != null) merged.contentHtml = saved.contentHtml;
+    if (Array.isArray(saved.blocks)) {
+      merged.blocks = saved.blocks.map(function (block) {
+        return Object.assign({}, block);
+      });
+    }
+    if (saved.section) merged.section = saved.section;
+    if (saved.design) merged.design = Object.assign({}, saved.design);
+    return merged;
   }
 
   function applySaved(saved) {
     if (!saved || !saved.program || !saved.slug) return null;
     var topic = getTopic(saved.program, saved.slug);
-    if (topic) return mergeFields(topic, saved);
+    if (topic) {
+      var merged = mergeFields(topic, saved);
+      var collections = saved.program === "index"
+        ? Object.keys(index).map(function (key) { return index[key]; })
+        : [lists[saved.program]];
+      collections.forEach(function (list) {
+        if (!list) return;
+        var indexInList = list.indexOf(topic);
+        if (indexInList !== -1) list[indexInList] = merged;
+      });
+      return merged;
+    }
 
     var created = {
       slug: saved.slug,
@@ -738,16 +755,33 @@
       title: saved.title || saved.slug,
       excerpt: saved.excerpt || "",
       image: saved.image || "images/logo.png",
-      backUrl: saved.program === "index" ? "index.html" : saved.program + ".html",
       contentHtml: saved.contentHtml || "",
-      blocks: saved.blocks || [],
+      blocks: Array.isArray(saved.blocks) ? saved.blocks.map(function (block) { return Object.assign({}, block); }) : [],
+      design: Object.assign({}, saved.design || {}),
       section: saved.section || "",
+      backUrl: saved.program === "index"
+        ? "index.html"
+        : saved.program === "ct-residuos"
+          ? "ct-residuosperigosos.html"
+          : saved.program + ".html",
       custom: true,
     };
 
     var list = getList(saved.program, saved.section || "sobre");
-    if (list) list.push(created);
+    if (list && !list.some(function (item) { return item.slug === created.slug; })) list.push(created);
     return created;
+  }
+
+  function removeTopic(program, slug) {
+    var collections = program === "index"
+      ? Object.keys(index).map(function (key) { return index[key]; })
+      : [lists[program]];
+    collections.forEach(function (list) {
+      if (!list) return;
+      for (var i = list.length - 1; i >= 0; i--) {
+        if (list[i].slug === slug) list.splice(i, 1);
+      }
+    });
   }
 
   function applyAll(savedList) {
@@ -765,5 +799,6 @@
     getTopic: getTopic,
     applySaved: applySaved,
     applyAll: applyAll,
+    removeTopic: removeTopic,
   };
 })();

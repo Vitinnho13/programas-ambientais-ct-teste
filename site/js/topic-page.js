@@ -128,7 +128,10 @@
       });
       if (!res.ok) return null;
       var data = await res.json();
-      return data.topic || null;
+      var topic = data.topic || null;
+      if (!topic) return null;
+      if ((topic.program && topic.program !== program) || (topic.slug && topic.slug !== slug)) return null;
+      return topic;
     } catch (e) {
       return null;
     }

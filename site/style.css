@@ -4862,3 +4862,143 @@ a.has-topic-edit,
 .page-programa main section {
   padding-block: 4rem;
 }
+
+@media (max-width: 640px) {
+  :root {
+    --header-height: 88px;
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    min-width: 0;
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .site-header {
+    height: var(--header-height);
+  }
+
+  .site-header .header__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 40px;
+    grid-template-rows: 40px 30px;
+    gap: 0.2rem 0.45rem;
+    align-content: center;
+    width: calc(100% - 1rem);
+    margin-inline: auto;
+    padding-block: 0.35rem;
+  }
+
+  .header__start {
+    grid-column: 1;
+    grid-row: 1;
+    gap: 0.35rem;
+  }
+
+  .programs-drawer-toggle,
+  .nav-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-link {
+    min-width: 0;
+  }
+
+  .logo-img {
+    display: block;
+    width: clamp(128px, 47vw, 190px);
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nav-toggle {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+  }
+
+  .header__extras {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .header__toplink {
+    width: 100%;
+    min-height: 30px;
+    justify-content: center;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-gray-light);
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  .header__toplink-text {
+    display: inline;
+    white-space: nowrap;
+  }
+
+  .site-nav {
+    z-index: 1001;
+  }
+
+  .container {
+    width: calc(100% - 1rem);
+    max-width: 1140px;
+  }
+
+  .hero {
+    min-height: min(88svh, 760px);
+    padding-top: calc(var(--header-height) + 1.5rem);
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 560px;
+    padding-inline: 0.25rem;
+  }
+
+  .hero__badge {
+    max-width: 100%;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.68rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 8vw, 2.7rem);
+  }
+
+  .hero__subtitle {
+    padding-inline: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .hero__actions {
+    width: min(100%, 320px);
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-inline: auto;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .section,
+  .page-programa main .section,
+  .page-programa main section {
+    padding-block: 3.5rem;
+  }
+}
