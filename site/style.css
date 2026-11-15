@@ -4865,7 +4865,7 @@ a.has-topic-edit,
 
 @media (max-width: 640px) {
   :root {
-    --header-height: 88px;
+    --header-height: 100px;
   }
 
   html,
@@ -4888,7 +4888,7 @@ a.has-topic-edit,
   .site-header .header__inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 40px;
-    grid-template-rows: 40px 30px;
+    grid-template-rows: 48px 32px;
     gap: 0.2rem 0.45rem;
     align-content: center;
     width: calc(100% - 1rem);
@@ -4914,7 +4914,7 @@ a.has-topic-edit,
 
   .logo-img {
     display: block;
-    width: clamp(128px, 47vw, 190px);
+    width: clamp(124px, 42vw, 164px);
     max-width: 100%;
     height: auto;
   }
@@ -4943,6 +4943,7 @@ a.has-topic-edit,
     background: var(--color-gray-light);
     font-size: 0.72rem;
     line-height: 1.2;
+    white-space: nowrap;
   }
 
   .header__toplink-text {
@@ -5000,5 +5001,44 @@ a.has-topic-edit,
   .page-programa main .section,
   .page-programa main section {
     padding-block: 3.5rem;
+  }
+
+  .benefits {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .benefits__content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .benefits__title {
+    font-size: clamp(1.75rem, 7vw, 2.4rem);
+    overflow-wrap: break-word;
+  }
+
+  .benefits__text {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .benefits__media {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-width: 0;
+    overflow: visible;
+  }
+
+  .benefits__media img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 }
